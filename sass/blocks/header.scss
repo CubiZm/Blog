@@ -4,6 +4,10 @@
 	display: flex;
 	// position: fixed;
 
+@include responsive(wide-screens) {
+	justify-content: space-around;
+}
+
 	&__logo {
 		width: 200px;
 	}

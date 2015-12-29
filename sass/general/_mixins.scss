@@ -8,3 +8,19 @@
 		weight: $weight;
 	}
 }
+
+
+@mixin responsive($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $mobile) { @content; }
+	}
+	@else if $media == medium-screens {
+		@media only screen and (min-width: $mobile + 1) and (max-width: $tablet - 1) { @content; }
+	}
+	@else if $media == wide-screens {
+		@media only screen and (min-width: $tablet) { @content; }
+	}
+		@else if $media == hight-screens {
+		@media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) { @content; }
+	}
+}
