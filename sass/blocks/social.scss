@@ -1,0 +1,27 @@
+.social {
+		width: 210px;
+		display: flex;
+		justify-content: space-around;
+		padding: 21px 0;
+		align-items: center;
+
+		&--twit {
+			width: 20px;
+			height: 20px;
+		}
+
+		&--fb {
+			width: 20px;
+			height: 20px;
+		}
+		&--en {
+			width: 18px;
+			height: 13px;
+			color: $white;
+			background: $black;
+			font-family: "Arial";
+			font-size: 9px;
+			padding: 2px 3px;
+			font-weight: bold;
+		}
+	}
