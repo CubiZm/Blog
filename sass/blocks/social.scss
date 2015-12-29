@@ -1,20 +1,19 @@
 .social {
 		width: 210px;
 		display: flex;
-		justify-content: space-around;
-		padding: 21px 0;
+		justify-content: space-between;
+		padding: 21px 60px 21px 0px;
 		align-items: center;
-
-		&--twit {
-			width: 20px;
-			height: 20px;
+		&__item {
+			padding-left: 15px;
+		}
+		&__item--twit {
 		}
 
-		&--fb {
-			width: 20px;
-			height: 20px;
+		&__item--fb {
+		padding-left: 0px;
 		}
-		&--en {
+		&__item--en {
 			width: 18px;
 			height: 13px;
 			color: $white;

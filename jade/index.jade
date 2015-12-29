@@ -2,39 +2,50 @@ doctype html
 html(lang='en')
 	head
 		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title Cloud Castle Blog
 		link(rel='stylesheet', href='css/style.css')
+		link(rel='icon', href='/favicon.ico', type='image/x-icon')
 	body
-		.header
-			.header__logo
-				a.header__link(href='#')
-					img.header__img(src='../img/logo.png', alt='logo')
-			.header__menu
-				ul.header__list
-					li.header__item About
-					li.header__item Meetings
-					li.header__item Events
-					li.header__item Projects
-					li.header__item Contacts us
-			.social
-				.social.social--twit
-					svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='17px', height='14px', viewbox='0 0 17 14', enable-background='new 0 0 17 14', xml:space='preserve')
-						g
-							path(fill='#000', d='M10.708,0.165c-1.521,0.557-2.483,1.99-2.374,3.561l0.037,0.605L7.762,4.257\
-							C5.547,3.973,3.767,2.82,2.123,1.201L1.197,0.021L0.65,1.147c-0.5,1.322,0.213,2.625,1.063,3.69C2.2,5.356,2.091,5.431,1.251,5.122\
-							c-0.292-0.1-0.548-0.173-0.572-0.137C0.594,5.073,0.886,6.197,1.117,6.642C1.434,7.26,2.078,7.865,2.785,8.225l0.596,0.284\
-							L2.675,8.521c-0.682,0-0.706,0.012-0.633,0.272c0.243,0.803,1.205,1.655,2.276,2.026l0.754,0.26l-0.656,0.396\
-							c-0.975,0.568-2.118,0.889-3.262,0.915c-0.549,0.012-1.175-0.026-1.153,0.004c0.186,0.249,1.64,0.909,2.503,1.182\
-							c2.594,0.805,6.013,0.426,8.016-0.789c1.365-0.882,3.256-3.042,4.022-4.921c0.413-1.001,0.828-2.83,0.828-3.708\
-							c0-0.568,0.036-0.643,0.718-1.322c0.401-0.396,0.779-0.828,0.853-0.951c0.121-0.234,0.108-0.234-0.512-0.025\
-							c-1.035,0.371-1.181,0.322-0.67-0.234c0.378-0.396,0.982-1.395,0.982-1.605c0-0.036-0.491,0.245-0.699,0.419\
-							c-0.218,0.124-0.55,0.31-0.916,0.421l-0.657,0.209L13.872,0.66c-0.328-0.223-0.791-0.47-1.034-0.544\
-							C12.217-0.058,11.268-0.032,10.708,0.165z')
-				.social.social--fb
-					svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='9.031px', height='16px', viewbox='0 0 9.031 16', enable-background='new 0 0 9.031 16', xml:space='preserve')
-						g
-							path(fill='#000', d='M5.984,15.984L2.067,16V8.996L0.031,8.936V6l2.036,0.061V5C2.031,2,4.031,0,7.031,0h2L9.016,2.969\
-							L8.031,2.992C6.031,3,6.031,3,5.988,6L5.984,6.045l3-0.014L8.406,9L5.998,8.98L5.984,15.984z')
-				.social.social--en RU
+		.wrapper-global
+			.header
+				.header__logo
+					a.header__link(href='#')
+						img.header__img(src='../img/logo.png', alt='logo')
+				.header__menu
+					ul.header__list
+						li.header__item About
+						li.header__item Meetings
+						li.header__item Events
+						li.header__item Projects
+						li.header__item Contacts us
+				.social
+					.social__item.social__item--twit
+						svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='17px', height='14px', viewbox='0 0 17 14', enable-background='new 0 0 17 14', xml:space='preserve')
+							g
+								path(fill='#000', d='M10.708,0.165c-1.521,0.557-2.483,1.99-2.374,3.561l0.037,0.605L7.762,4.257\
+								C5.547,3.973,3.767,2.82,2.123,1.201L1.197,0.021L0.65,1.147c-0.5,1.322,0.213,2.625,1.063,3.69C2.2,5.356,2.091,5.431,1.251,5.122\
+								c-0.292-0.1-0.548-0.173-0.572-0.137C0.594,5.073,0.886,6.197,1.117,6.642C1.434,7.26,2.078,7.865,2.785,8.225l0.596,0.284\
+								L2.675,8.521c-0.682,0-0.706,0.012-0.633,0.272c0.243,0.803,1.205,1.655,2.276,2.026l0.754,0.26l-0.656,0.396\
+								c-0.975,0.568-2.118,0.889-3.262,0.915c-0.549,0.012-1.175-0.026-1.153,0.004c0.186,0.249,1.64,0.909,2.503,1.182\
+								c2.594,0.805,6.013,0.426,8.016-0.789c1.365-0.882,3.256-3.042,4.022-4.921c0.413-1.001,0.828-2.83,0.828-3.708\
+								c0-0.568,0.036-0.643,0.718-1.322c0.401-0.396,0.779-0.828,0.853-0.951c0.121-0.234,0.108-0.234-0.512-0.025\
+								c-1.035,0.371-1.181,0.322-0.67-0.234c0.378-0.396,0.982-1.395,0.982-1.605c0-0.036-0.491,0.245-0.699,0.419\
+								c-0.218,0.124-0.55,0.31-0.916,0.421l-0.657,0.209L13.872,0.66c-0.328-0.223-0.791-0.47-1.034-0.544\
+								C12.217-0.058,11.268-0.032,10.708,0.165z')
+					.social__item.social__item--fb
+						svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='9.031px', height='16px', viewbox='0 0 9.031 16', enable-background='new 0 0 9.031 16', xml:space='preserve')
+							g
+								path(fill='#000', d='M5.984,15.984L2.067,16V8.996L0.031,8.936V6l2.036,0.061V5C2.031,2,4.031,0,7.031,0h2L9.016,2.969\
+								L8.031,2.992C6.031,3,6.031,3,5.988,6L5.984,6.045l3-0.014L8.406,9L5.998,8.98L5.984,15.984z')
+					.social__item.social__item--en RU
+		.wrapper-global
+			.team
+				.team__item
+					img.team__img(src='../img/face.png', alt='logo' heigth="160")
+				.team__item.team__item--bg-blue
+						h1.team__title Team
+						p.team__description A team comprises a group of people or animal linked in a common purpose.
+
 
 

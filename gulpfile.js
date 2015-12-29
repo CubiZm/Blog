@@ -27,7 +27,7 @@ gulp.task('jade', function() {
 	gulp.src('./jade/*.jade')
 		.pipe(jade())
 		.pipe(gulp.dest('./'))
-		gulp.watch("jade/*.jade"), ["jade"];
+		// gulp.watch("jade/*.jade"), ["jade"];
 });
 
 gulp.task("start", function() {

@@ -1,0 +1,10 @@
+/*Mixins*/
+
+@mixin title($size: 21px, $weight:400, $color: $text-color) {
+	color: $text-color;
+	font: {
+		family: $font-family-base;
+		size: $size;
+		weight: $weight;
+	}
+}

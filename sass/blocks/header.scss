@@ -1,7 +1,8 @@
 .header {
-	min-height:78px;
+	height: 78px;
+	width: 100%;
 	display: flex;
-
+	// position: fixed;
 
 	&__logo {
 		width: 200px;
