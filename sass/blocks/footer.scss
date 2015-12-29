@@ -1,0 +1,12 @@
+.main-footer {
+			display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+.address {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 66%;
+}
