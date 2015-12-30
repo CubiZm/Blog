@@ -1,10 +1,9 @@
 /*Mixins*/
 
-@mixin title($size: 21px, $weight:400, $color: $text-color) {
-	color: $text-color;
+@mixin submenu-title($size: 13px, $weight:400) {
 	font: {
-		family: $font-family-base;
-		size: $size;
+		family: $font-family-menu;
+		size: $font-size-base;
 		weight: $weight;
 	}
 }

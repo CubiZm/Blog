@@ -4,6 +4,7 @@
 	display: flex;
 	position: fixed;
 	background: $white;
+	z-index: 2;
 
 @include responsive(wide-screens) {
 	justify-content: space-around;
