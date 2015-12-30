@@ -8,6 +8,14 @@
 	}
 }
 
+@mixin content-title($size: 58px, $weight:400) {
+		font: {
+			size: $font-size-title;
+			weight: $weight;
+		}
+		color: $text-color;
+}
+
 
 @mixin responsive($media) {
 	@if $media == handhelds {

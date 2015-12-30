@@ -9,7 +9,7 @@
 		@include submenu-title;
 		display: flex;
 		justify-content: flex-end;
-		padding: 17px 82px;
+		padding: 17px 90px;
 		font-size: 36px;
 		text-transform: uppercase;
 		color: $text-color;
@@ -18,7 +18,7 @@
 		content: '+';
 		display: block;
 		position: absolute;
-		right: 26px;
+		right: 31px;
 		top: 17px;
 		padding: 2px 7px;
 		width: 42px;
@@ -27,4 +27,7 @@
 		border-radius: 50%;
 		font-size: 30px;
 	}
+
+	&__title {
 	}
+}

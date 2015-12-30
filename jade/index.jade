@@ -14,17 +14,23 @@ html(lang='en')
 						img.header__img(src='../img/logo.png', alt='logo')
 				.header__menu
 					ul.header__list
-						li.header__item About
-						li.header__item Meetings
-						li.header__item Events
-						li.header__item Projects
-						li.header__item Contacts us
+						li.header__item
+							a.header__link(href='#') About
+						li.header__item
+							a.header__link(href='#') Meetings
+						li.header__item
+							a.header__link(href='#') Events
+						li.header__item
+							a.header__link(href='#') Projects
+						li.header__item
+							a.header__link(href='#') Contacts us
 
 				.social
 					.social__item.social__item--twit
-						svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='17px', height='14px', viewbox='0 0 17 14', enable-background='new 0 0 17 14', xml:space='preserve')
-							g
-								path(fill='#000', d='M10.708,0.165c-1.521,0.557-2.483,1.99-2.374,3.561l0.037,0.605L7.762,4.257\
+						a.social__link(href='#')
+							svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='17px', height='14px', viewbox='0 0 17 14', enable-background='new 0 0 17 14', xml:space='preserve')
+								g
+									path(fill='#000', d='M10.708,0.165c-1.521,0.557-2.483,1.99-2.374,3.561l0.037,0.605L7.762,4.257\
 								C5.547,3.973,3.767,2.82,2.123,1.201L1.197,0.021L0.65,1.147c-0.5,1.322,0.213,2.625,1.063,3.69C2.2,5.356,2.091,5.431,1.251,5.122\
 								c-0.292-0.1-0.548-0.173-0.572-0.137C0.594,5.073,0.886,6.197,1.117,6.642C1.434,7.26,2.078,7.865,2.785,8.225l0.596,0.284\
 								L2.675,8.521c-0.682,0-0.706,0.012-0.633,0.272c0.243,0.803,1.205,1.655,2.276,2.026l0.754,0.26l-0.656,0.396\
@@ -35,11 +41,13 @@ html(lang='en')
 								c-0.218,0.124-0.55,0.31-0.916,0.421l-0.657,0.209L13.872,0.66c-0.328-0.223-0.791-0.47-1.034-0.544\
 								C12.217-0.058,11.268-0.032,10.708,0.165z')
 					.social__item.social__item--fb
-						svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='9.031px', height='16px', viewbox='0 0 9.031 16', enable-background='new 0 0 9.031 16', xml:space='preserve')
-							g
-								path(fill='#000', d='M5.984,15.984L2.067,16V8.996L0.031,8.936V6l2.036,0.061V5C2.031,2,4.031,0,7.031,0h2L9.016,2.969\
+						a.social__link(href='#')
+							svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='9.031px', height='16px', viewbox='0 0 9.031 16', enable-background='new 0 0 9.031 16', xml:space='preserve')
+								g
+									path(fill='#000', d='M5.984,15.984L2.067,16V8.996L0.031,8.936V6l2.036,0.061V5C2.031,2,4.031,0,7.031,0h2L9.016,2.969\
 								L8.031,2.992C6.031,3,6.031,3,5.988,6L5.984,6.045l3-0.014L8.406,9L5.998,8.98L5.984,15.984z')
-					.social__item.social__item--en RU
+					.social__item.social__item--en
+						a.social__link(href='#') RU
 
 		.wrapper-global
 			.team
@@ -108,16 +116,20 @@ html(lang='en')
 
 		.wrapper-global
 			.platforms
-				.platforms__item.platforms__grid.platforms__grid--layout
-				.platforms__item.platforms__grid.platforms__grid--layout
+				.platforms__item
 					.platforms__subitem
-						h2.platforms__title Basiliq interface
-						p.platforms__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
+						.platforms__img.platforms__img--left
+				.platforms__item.platforms__item--flex
 					.platforms__subitem
+						.platforms__title Basiliq interface
+						.platforms__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
+						.platforms__img.platforms__img--center
+				.platforms__item.platforms__item--flex
+					.platforms__subitem.platforms__subitem--bg
+						.platforms__img.platforms__img--right
+						.platforms__title House Account
+						.platforms__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
 
-				.platforms__item.platforms__grid.platforms__grid--layout-main
-					h2.platforms__title House Account
-					p.platforms__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
 
 		.wrapper-global
 			footer.main-footer
