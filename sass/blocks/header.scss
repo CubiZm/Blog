@@ -2,7 +2,8 @@
 	height: 78px;
 	width: 100%;
 	display: flex;
-	// position: fixed;
+	position: fixed;
+	background: $white;
 
 @include responsive(wide-screens) {
 	justify-content: space-around;

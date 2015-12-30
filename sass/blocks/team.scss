@@ -1,8 +1,8 @@
 .team {
-	height: 160px;
-	width: 100%;
 	overflow: hidden;
-
+	padding-top: 78px;
+	height: 240px;
+	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
 	&__item {
@@ -16,10 +16,10 @@
 
 	&__title {
 		font-size: 25px;
-		line-height: 13px;
+		line-height: 9px;
 		color: $white;
 		text-transform: uppercase;
-		padding: 50px 0 0 0;
+		padding: 45px 0 0 0;
 	}
 	&__description {
 		color: $white;
