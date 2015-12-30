@@ -1,0 +1,20 @@
+@import "../node_modules/normalize.css/normalize";
+@import "../sass/general/fonts.scss";
+@import "../sass/general/_variables.scss";
+@import "../sass/general/_mixins.scss";
+
+@import "../sass/general/base.scss";
+
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/team.scss";
+@import "../sass/blocks/service.scss";
+@import "../sass/blocks/stuff.scss";
+@import "../sass/blocks/conference.scss";
+@import "../sass/blocks/platforms.scss";
+@import "../sass/blocks/footer.scss";
+
+
+@import "../sass/blocks/meetings.scss";
+@import "../sass/blocks/events.scss";
+@import "../sass/blocks/projects.scss";

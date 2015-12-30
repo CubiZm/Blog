@@ -1,0 +1,29 @@
+.team {
+	overflow: hidden;
+	padding-top: 78px;
+	height: 240px;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	&__item {
+
+	}
+	&__item--bg-blue {
+		background: $bg-blue;
+		padding: 0 0 0 35px;
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 25px;
+		line-height: 9px;
+		color: $white;
+		text-transform: uppercase;
+		padding: 45px 0 0 0;
+	}
+	&__description {
+		color: $white;
+		width: 265px;
+	}
+
+}
