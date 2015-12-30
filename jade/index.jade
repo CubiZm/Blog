@@ -59,24 +59,30 @@ html(lang='en')
 
 		.wrapper-global
 			.service
-				.service__item.service__grid.service__grid--layout-main
-					h2.service__title
-						| Awesome Design
-						br
-						| Great code
-						br
-						| Crazy team
-					p.service__description We have the experience team and process to bring ideas from concept to launch and beyond. Since our fouding in 2009, we've launcged over 25 new products.
-				.service__item.service__grid.service__grid--layout
+				.service__item
+					.service__subitem.service__subitem--bg-grey
+						.service__img--left
+					.service__subitem.service__subitem--size
+						.service__title.service__title--main
+							| Awesome design
+							br
+							| Great code
+							br
+							| Crazy team
+						.service__description.service__description--main We have the experience team and process to bring ideas from concept to launch and beyond. Since our fouding in 2009, we've launcged over 25 new products.
+				.service__item.service__item--flex
 					.service__subitem
-						h2.sevice__title Development
-						p.service__description Check out the timeline and be happy, dude.
-					.service__subitem
-						h2.sevice__title Design
-						p.service__description Check out the timeline and be happy, dude.
-				.service__item.service__grid.service__grid--layout
-					h2.sevice__title Work
-					p.service__description Check out the timeline and be happy, dude.
+						.service__title Development
+						.service__description Check out the timeline and be happy, dude.
+					.service__subitem.service__subitem--center
+						.service__title Design
+						.service__description Check out the timeline and be happy, dude.
+				.service__item.service__item--flex
+					.service__subitem.service__subitem--height
+						.service__img.service__img--right
+					.service__subitem.service__subitem--bg-right
+						.service__title.service__title--left Work
+						.service__description.service__description--left Check out the timeline and be happy, dude.
 
 		.wrapper-global
 			.meetings
@@ -84,16 +90,17 @@ html(lang='en')
 
 		.wrapper-global
 			.stuff
-				.stuff__item.stuff__grid.stuff__grid--layout
-				.stuff__item.stuff__grid.stuff__grid--layout
+				.stuff__item
+					.stuff__img.stuff__img--left
+				.stuff__item.stuff__item--flex
 					.stuff__subitem
-						h2.stuff__title Tatiana Simakova
-						p.stuff__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
+						.stuff__title.stuff__title--size Tatiana Simakova
+						.stuff__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
+						.stuff__img.stuff__img--center
+				.stuff__item.stuff__item--right
 					.stuff__subitem
-
-				.stuff__item.stuff__grid.stuff__grid--layout-main
-					h2.stuff__title Daria Biryukova
-					p.stuff__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
+						.stuff__title.stuff__title--white Daria Biryukova
+						.stuff__description.stuff__description--white Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
 
 		.wrapper-global
 			.events
