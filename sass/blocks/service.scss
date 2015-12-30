@@ -7,6 +7,9 @@
 
 	&__item {
 		width: 33.3333%;
+		@include responsive(hight-screens) {
+			width: 25%;
+		}
 	}
 
 	&__subitem {
@@ -42,12 +45,20 @@
 		background: url(../img/more-people.png) no-repeat;
 		background-position: 0 118px;
 		height: 240px;
+		@include responsive(hight-screens) {
+			background: url(../img/more-people-high-screen.png) no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
 
 	}
 		&__subitem--center {
 			background: url(../img/hands.png) no-repeat;
-			background-position: -93px -56px;;
+			background-position: -93px -56px;
 			height: 320px;
+			@include responsive(hight-screens) {
+				background-position: -70px -56px;;
+		}
 	}
 		 &__img--right {
 			background: url(../img/right-block.png) no-repeat;
@@ -90,5 +101,11 @@
 		font-weight: 800;
 		line-height: 21px;
 		color: $black;
+	}
+
+	&__item--grid-50 {
+		@include responsive(hight-screens) {
+			width: 50%;
+		}
 	}
 }
