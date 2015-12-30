@@ -1,53 +1,4 @@
 .platforms {
-// 	&__grid {
-// 	}
-
-// 	&__grid--layout-main {
-
-// 	}
-// 	&__grid--layout-left {
-// 		// width: 33.33333%;
-// 		// background: url(../img/hand-iphone.png) no-repeat;
-// 	}
-// 		&__grid--layout-center {
-// 		width: 33.33333%;
-// 		// background: url(../img/app-iphone.png) no-repeat;
-// 		// background-position: -320px 120px;
-
-// 	}
-
-// 	&__item {
-
-// 	}
-// 	&__title {
-// 		@include content-title;
-// 		color: $text-color;
-// 		margin: 21px 29px 4px 29px;
-// 		line-height: 60px;
-// 	}
-
-// 	&__description {
-
-// 	}
-
-// 	&__subitem {
-// 		background: $white;
-// 		padding-top: 5px;
-// 	}
-
-
-
-// 	&__subitem--main {
-
-// 	}
-
-// 	&__title--main {
-
-// 	}
-
-// }
-
-
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -81,7 +32,7 @@
 	}
 		 &__img--right {
 			background: url(../img/many-iphones.png) no-repeat;
-			background-position: -365px 100%;
+			background-position: -325px 100%;
 			height: 321px;
 	}
 
