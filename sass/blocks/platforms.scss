@@ -10,10 +10,10 @@
 	}
 	&__item:nth-child(3) {
 		@include responsive(hight-screens) {
-			width: 56%;
+			width: 82%;
 		}
 		@media($desktop-high) {
-			width: 56%;
+			width: 82%;
 		}
 	}
 
@@ -26,11 +26,11 @@
 	&__subitem--bg {
 		background: url(../img/many-iphones-2.png) no-repeat, $bg-grey;
 		@include responsive(hight-screens) {
-				background-position: -638px 0px;
+				background-position: -520px 0px;
 				height: 640px;
 			}
 		@media($desktop-high) {
-			background-position: -638px 0px;
+			background-position: -520px 0px;
 			height: 640px;
 		}
 
@@ -47,7 +47,6 @@
 
 	&__title {
 		@include content-title;
-		color: $text-color;
 		padding: 21px 29px 4px 29px;
 		line-height: 60px;
 	}
