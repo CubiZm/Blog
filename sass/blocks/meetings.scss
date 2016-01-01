@@ -1,10 +1,5 @@
 .meetings {
-	width: 66.666666%;
-	height: 80px;
-	background: $bg-yellow;
-	position: relative;
-
-
+	display: flex;
 	&__title {
 		@include submenu-title;
 		display: flex;
@@ -14,7 +9,44 @@
 		text-transform: uppercase;
 		color: $text-color;
 		}
-		&:before {
+	&__item {
+		@include responsive(hight-screens) {
+			display: block;
+			width: 320px;
+			min-height: 5px;
+		}
+		@media($desktop-high) {
+			display: block;
+			width: 320px;
+			min-height: 5px;
+		}
+	}
+	&__item--left {
+		display: none;
+		@include responsive(hight-screens) {
+			display: block;
+			width: 22.5%;
+		}
+		@media($desktop-high) {
+			display: block;
+			width: 22.5%;
+		}
+	}
+	&__item--center {
+		position: relative;
+		width: 66.666666%;
+		background: $bg-yellow;
+		@include responsive(hight-screens) {
+			display: block;
+			width: 45%;
+		}
+		@media($desktop-high) {
+			display: block;
+			width: 45%;
+		}
+
+	}
+		&__item--center:before {
 		content: '+';
 		display: block;
 		position: absolute;
@@ -26,5 +58,14 @@
 		border: 1px solid #483435;
 		border-radius: 50%;
 		font-size: 30px;
+	}
+	&__item--right {
+		display: none;
+		@include responsive(hight-screens) {
+			width: 33%;
+		}
+		@media($desktop-high) {
+			width: 33%;
+		}
 	}
 }

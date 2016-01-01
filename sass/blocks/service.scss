@@ -9,9 +9,15 @@
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
+		@media($desktop-high) {
+			width: 22%;
+		}
 	}
 	&__item--flex {
 		@include responsive(hight-screens) {
+			width: 56%;
+		}
+		@media($desktop-high) {
 			width: 56%;
 		}
 	}
@@ -19,7 +25,7 @@
 		height: 320px;
 	}
 	&__subitem--img {
-		background: url(../img/more-people-high-screen.png) no-repeat, #f5f5f5;
+		background: url(../img/more-people-high-screen.png) no-repeat, $smoke;
 		background-position: 12px 115px;
 		background-size: contain;
 		height: 240px;
@@ -29,16 +35,14 @@
 			margin: 0 auto;
 			height: 345px;
 		}
+		@media($desktop-high) {
+			background-position: 22px 0px;
+			background-size: cover;
+		}
 	}
 	&__subitem--bg-grey {
-		background: #f5f5f5;
+		background: $smoke;
 		height: 400px;
-		@include responsive(hight-screens) {
-			height: 295px;
-		}
-		@media($desktop-high) {
-			height: 295px;
-		}
 	}
 	&__subitem--height {
 		background: #eaebed;

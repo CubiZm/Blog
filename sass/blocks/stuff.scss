@@ -9,6 +9,9 @@
 		@include responsive(hight-screens) {
 			width: 25%;
 		}
+		@media($desktop-high) {
+			width: 25%;
+		}
 	}
 	&__item--right {
 		position: relative;
@@ -16,6 +19,10 @@
 		background-position: -321px -374px;
 		height: 640px;
 		@include responsive(hight-screens) {
+			width: 60%;
+			background-position:-28px -381px;
+		}
+		@media($desktop-high) {
 			width: 60%;
 			background-position:-28px -381px;
 		}
@@ -41,7 +48,7 @@
 	&__title {
 		@include content-title;
 		color: $text-color;
-		margin: 21px 29px 4px 29px;
+		padding: 21px 29px 4px 29px;
 		line-height: 60px;
 	}
 	&__title--size {
@@ -50,12 +57,16 @@
 	&__title--fonts {
 		color: $white;
 		line-height: 65px;
-		padding-top: 310px;
-		padding-left: 17px;
+		padding-top: 324px;
+		padding-left: 34px;
 		@include responsive(hight-screens) {
+			width: 300px;
+			font-size: 73px;
 			color: $text-color;
 		}
 		@media($desktop-high) {
+			width: 300px;
+			font-size: 73px;
 			color: $text-color;
 		}
 	}
@@ -80,8 +91,8 @@
 
 .hash {
 	position: absolute;
-	top: 310px;
-	left: 50px;
+	top: 290px;
+	left: 40px;
 	display: none;
 	width: 25px;
 	@include responsive(hight-screens) {

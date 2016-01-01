@@ -1,5 +1,5 @@
 .conference {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
@@ -10,6 +10,9 @@
 			@include responsive(hight-screens) {
 				width: 22%;
 			}
+		@media($desktop-high) {
+			width: 22%;
+		}
 	}
 
 	&__subitem {
@@ -40,16 +43,23 @@
 			background-position: -484px -8px;
 			height: 640px;
 			@include responsive(hight-screens) {
+				display: flex;
+				justify-content: flex-end;
 				width: 57%;
 				background-position: 0px 0px;
 				}
 			@media($desktop-high) {
+				justify-content: flex-end;
+				justify-content: flex-end;
 				width: 57%;
 				background-position: 0px 0px;
 			}
-
 	}
 
+	&__text {
+		width: 300px;
+		float: right;
+	}
 	&__title {
 		@include content-title;
 		color: $text-color;
