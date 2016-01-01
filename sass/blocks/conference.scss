@@ -1,5 +1,5 @@
 .conference {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
@@ -7,6 +7,12 @@
 
 	&__item {
 		width: 33.3333%;
+			@include responsive(hight-screens) {
+				width: 22%;
+			}
+		@media($desktop-high) {
+			width: 22%;
+		}
 	}
 
 	&__subitem {
@@ -20,8 +26,11 @@
 
 	&__img--left {
 		background: url(../img/boy-robot.png) no-repeat;
-		background-position: -304px -90px;
+		background-position: -300px -90px;
 		height: 640px;
+		@media($desktop-high) {
+			background-position: -300px -90px;
+		}
 
 	}
 		&__img--center {
@@ -30,15 +39,31 @@
 			height: 321px;
 	}
 		 &__item--right {
-			background: url(../img/right-face-2.png) no-repeat;
+			background: url(../img/right-face-3.png) no-repeat;
+			background-position: -484px -8px;
 			height: 640px;
-
+			@include responsive(hight-screens) {
+				display: flex;
+				justify-content: flex-end;
+				width: 57%;
+				background-position: 0px 0px;
+				}
+			@media($desktop-high) {
+				justify-content: flex-end;
+				justify-content: flex-end;
+				width: 57%;
+				background-position: 0px 0px;
+			}
 	}
 
+	&__text {
+		width: 300px;
+		float: right;
+	}
 	&__title {
 		@include content-title;
 		color: $text-color;
-		margin: 21px 29px 4px 29px;
+		padding: 21px 29px 4px 31px;
 		line-height: 60px;
 	}
 	&__title--size {
@@ -47,7 +72,7 @@
 
 	&__title--white {
 		color: $white;
-		padding-top: 265px;
+		padding: 286px 0px 0 18px;
 	}
 
 	&__description {

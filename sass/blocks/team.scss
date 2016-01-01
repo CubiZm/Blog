@@ -5,14 +5,63 @@
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
+	background: $bg-blue;
 	&__item {
+	}
+	&__item--right {
+		display: none;
+		@include responsive(hight-screens) {
+			display: block;
+			background: $white;
+			width: 30%;
+			}
+		@media($desktop-high) {
+			display: block;
+			background: $white;
+			width: 30%;
+		}
+	}
+	&__item--center {
+		// padding: 0 0 0 35px;
+		width: 33.333%;
+		@include responsive(hight-screens) {
+			display: block;
+			width: 37%;
+			padding: 0 0 0 35px;
+			}
+		@media($desktop-high) {
+			display: block;
+			width: 37%;
+			padding: 0 0 0 35px;
+		}
+	}
+	&__item--left {
+		display: none;
+		@include responsive(hight-screens) {
+			display: block;
+			background: $white;
+			width: 15%;
+			}
+		@media($desktop-high) {
+			display: block;
+			background: $white;
+			width: 15%;
+		}
+	}
 
-	}
-	&__item--bg-blue {
-		background: $bg-blue;
-		padding: 0 0 0 35px;
-		width: 100%;
-	}
+	&__item--img {
+		background: url(../img/face.png) no-repeat;
+		width: 60%;
+		@include responsive(hight-screens) {
+			display: block;
+			width: 53%;
+			}
+		@media($desktop-high) {
+			display: block;
+			width: 53%;
+		}
+		}
+
 
 	&__title {
 		font-size: 25px;

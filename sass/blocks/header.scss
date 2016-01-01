@@ -5,11 +5,27 @@
 	position: fixed;
 	background: $white;
 	z-index: 2;
-
-@include responsive(wide-screens) {
-	justify-content: space-around;
-}
-
+	@include responsive(wide-screens) {
+		width: 1440px;
+		justify-content: space-between;
+		background: $smoke;
+	}
+	@media($desktop-high) {
+		width: 1440px;
+		justify-content: space-between;
+		background: $smoke;
+	}
+	&__wrapper {
+		display: flex;
+		@include responsive(wide-screens) {
+			display: flex;
+			justify-content: space-between;
+		}
+		@media($desktop-high) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
 	&__logo {
 		width: 200px;
 	}
@@ -33,6 +49,5 @@
 		font-weight: 900;
 		font-size: 13px;
 		text-transform: uppercase;
-
 	}
 }
