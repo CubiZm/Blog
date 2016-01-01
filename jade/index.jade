@@ -59,25 +59,22 @@ html(lang='en')
 
 		.wrapper-global
 			.service
-				.service__item.service__item--grid-50
+				.service__item.service__item--flex
 					.service__subitem.service__subitem--bg-grey
-						.service__img--left
 					.service__subitem.service__subitem--size
 						.service__title.service__title--main
-							| Awesome design
-							br
-							| Great code
-							br
-							| Crazy team
+							.service__text Awesome design.
+							.service__text Great code.
+							.service__text Crazy team.
 						.service__description.service__description--main We have the experience team and process to bring ideas from concept to launch and beyond. Since our fouding in 2009, we've launcged over 25 new products.
-				.service__item.service__item--flex
+				.service__item
 					.service__subitem
 						.service__title Development
 						.service__description Check out the timeline and be happy, dude.
 					.service__subitem.service__subitem--center
 						.service__title Design
 						.service__description Check out the timeline and be happy, dude.
-				.service__item.service__item--flex
+				.service__item
 					.service__subitem.service__subitem--height
 						.service__img.service__img--right
 					.service__subitem.service__subitem--bg-right
@@ -110,7 +107,7 @@ html(lang='en')
 			.conference
 				.conference__item.conference__item--right
 					.conference__subitem
-						.conference__title.conference__title--white JetBrains two days festival
+						.conference__title.conference__title--white JetBrains - two days festival
 						.conference__description.conference__description--white Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
 				.conference__item.conference__item--flex
 					.conference__subitem
@@ -138,10 +135,9 @@ html(lang='en')
 						.platforms__img.platforms__img--center
 				.platforms__item.platforms__item--flex
 					.platforms__subitem.platforms__subitem--bg
+						.platforms__invisible
 						.platforms__title House Account
 						.platforms__description Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
-						.platforms__invisible
-
 
 		.wrapper-global
 			footer.main-footer

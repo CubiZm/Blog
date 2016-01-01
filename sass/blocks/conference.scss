@@ -37,7 +37,7 @@
 	}
 		 &__item--right {
 			background: url(../img/right-face-3.png) no-repeat;
-			background-position: -482px;
+			background-position: -484px -8px;
 			height: 640px;
 			@include responsive(hight-screens) {
 				width: 56%;
@@ -53,7 +53,7 @@
 	&__title {
 		@include content-title;
 		color: $text-color;
-		margin: 21px 29px 4px 29px;
+		padding: 21px 29px 4px 31px;
 		line-height: 60px;
 	}
 	&__title--size {
@@ -62,7 +62,7 @@
 
 	&__title--white {
 		color: $white;
-		padding-top: 265px;
+		padding: 286px 0px 0 18px;
 	}
 
 	&__description {
