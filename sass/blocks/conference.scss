@@ -7,6 +7,9 @@
 
 	&__item {
 		width: 33.3333%;
+			@include responsive(hight-screens) {
+				width: 22%;
+			}
 	}
 
 	&__subitem {
@@ -22,6 +25,9 @@
 		background: url(../img/boy-robot.png) no-repeat;
 		background-position: -304px -90px;
 		height: 640px;
+		@media($desktop-high) {
+			background-position: -230px -90px;
+		}
 
 	}
 		&__img--center {
@@ -30,8 +36,17 @@
 			height: 321px;
 	}
 		 &__item--right {
-			background: url(../img/right-face-2.png) no-repeat;
+			background: url(../img/right-face-3.png) no-repeat;
+			background-position: -482px;
 			height: 640px;
+			@include responsive(hight-screens) {
+				width: 56%;
+				background-position: 0px 0px;
+				}
+			@media($desktop-high) {
+				width: 56%;
+				background-position: 0px 0px;
+			}
 
 	}
 

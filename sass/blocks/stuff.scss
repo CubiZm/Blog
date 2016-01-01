@@ -33,9 +33,13 @@
 			height: 321px;
 	}
 		 &__item--right {
-			background: url(../img/right-face.png) no-repeat;
-			background-position: -639px -420px;
+			background: url(../img/right-face--2.png) no-repeat;
+			background-position: -330px -370px;
 			height: 640px;
+			@include responsive(hight-screens) {
+				width: 50%;
+				background-position: -92px -393px;
+		}
 
 	}
 

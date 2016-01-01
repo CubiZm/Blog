@@ -59,6 +59,10 @@
 			@include responsive(hight-screens) {
 				background-position: -70px -56px;;
 		}
+		@media($desktop-high) {
+			background-size: cover;
+			background-position: 0;
+		}
 	}
 		 &__img--right {
 			background: url(../img/right-block.png) no-repeat;
