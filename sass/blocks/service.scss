@@ -14,11 +14,14 @@
 		}
 	}
 	&__item--flex {
+		background: $smoke;
 		@include responsive(hight-screens) {
 			width: 56%;
+			background: $smoke;
 		}
 		@media($desktop-high) {
 			width: 56%;
+			background: $smoke;
 		}
 	}
 	&__subitem {
@@ -42,7 +45,6 @@
 	}
 	&__subitem--bg-grey {
 		background: $smoke;
-		height: 400px;
 	}
 	&__subitem--height {
 		background: #eaebed;
