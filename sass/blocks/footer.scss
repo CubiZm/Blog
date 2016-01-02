@@ -3,6 +3,15 @@
 		flex-direction: row;
 		justify-content: space-between;
 		height: 205px;
+		@media($mobile) {
+			flex-direction: column;
+		}
+}
+
+.contacts {
+	@media($mobile) {
+		margin: 0 auto;
+	}
 }
 
 .address {
@@ -11,17 +20,35 @@
 	justify-content: space-around;
 	width: 66%;
 	padding: 55px 30px 0 0;
+	@media($mobile) {
+		flex-direction: column-reverse;
+		padding: 55px 20px;
+		width: 100%;
+	}
 
 	&__city {
 		font-family: Arial;
 		font-weight: bold;
 		color: #424141;
 		padding-bottom: 20px;
+		@media($mobile) {
+			padding-right: 25px;
+		}
 	}
-
+	&__item {
+		@media($mobile) {
+			display: flex;
+			flex-direction: column;
+			width: 350px;
+			padding: 0px 78px;
+	}
+}
 	&__text {
 		font-family: Arial;
-		color: #424141
+		color: #424141;
+		@media($mobile) {
+			padding-bottom: 20px;
+		}
 	}
 }
 
@@ -31,6 +58,9 @@
 	font-size: 18px;
 	padding: 55px 0 5px 35px;
 	color: #424141;
+	@media($mobile) {
+		padding: 40px 0 5px 35px;
+	}
 }
 
 .email {
@@ -38,4 +68,7 @@
 	font-size: 15px;
 	padding-left: 35px;
 	color: #424141;
+	@media($mobile) {
+		padding: 0 0 30px 0;
+	}
 }

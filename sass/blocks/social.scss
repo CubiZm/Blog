@@ -35,5 +35,8 @@
 		&--footer {
 			justify-content: space-around;
 			padding-left: 5px;
+			@media($mobile) {
+				display: none;
+			}
 		}
 	}

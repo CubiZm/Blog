@@ -6,17 +6,18 @@
 	background: $white;
 	z-index: 2;
 	@include responsive(wide-screens) {
-		// width: 1440px;
 		justify-content: space-between;
 		background: $smoke;
 	}
 	@media($desktop-high) {
-		// width: 1440px;
 		justify-content: space-between;
 		background: $smoke;
 	}
 	&__wrapper {
 		display: flex;
+		// @media($mobile) {
+		// 	display: none;
+		// }
 		@include responsive(wide-screens) {
 			display: flex;
 			justify-content: space-between;
@@ -44,6 +45,14 @@
 		justify-content: space-around;
 		padding: 20px 40px 0 0;
 		list-style-type: none;
+		@media($mobile) {
+			flex-direction: column;
+			background: white;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 	&__item {
 		font-weight: 900;
