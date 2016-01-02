@@ -6,12 +6,12 @@
 	background: $white;
 	z-index: 2;
 	@include responsive(wide-screens) {
-		width: 1440px;
+		// width: 1440px;
 		justify-content: space-between;
 		background: $smoke;
 	}
 	@media($desktop-high) {
-		width: 1440px;
+		// width: 1440px;
 		justify-content: space-between;
 		background: $smoke;
 	}
