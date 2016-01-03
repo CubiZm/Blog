@@ -3,10 +3,16 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-	height: 640px;
+	min-height: 640px;
+	@media($mobile) {
+		flex-direction: column;
+	}
 
 	&__item {
 		width: 33.3333%;
+		@media($mobile) {
+			width: 100%;
+		}
 			@include responsive(hight-screens) {
 				width: 22%;
 			}
@@ -16,7 +22,10 @@
 	}
 
 	&__subitem {
-		height: 640px;
+		min-height: 640px;
+		@media($mobile) {
+			min-height: 0px;
+		}
 	}
 	&__subitem--flex {
 		display: flex;
@@ -28,6 +37,9 @@
 		background: url(../img/boy-robot.png) no-repeat;
 		background-position: -300px -90px;
 		height: 640px;
+		@media($mobile) {
+			display: none;
+		}
 		@media($desktop-high) {
 			background-position: -300px -90px;
 		}
@@ -36,12 +48,15 @@
 		&__img--center {
 			background: url(../img/rabbit-404.png) no-repeat;
 			background-position: -315px -13px;
-			height: 321px;
+			height: 320px;
 	}
 		 &__item--right {
 			background: url(../img/right-face-3.png) no-repeat;
 			background-position: -484px -8px;
 			height: 640px;
+			@media($mobile) {
+				height: 480px;
+			}
 			@include responsive(hight-screens) {
 				display: flex;
 				justify-content: flex-end;
@@ -73,6 +88,9 @@
 	&__title--white {
 		color: $white;
 		padding: 286px 0px 0 18px;
+		@media($mobile) {
+			padding: 220px 0px 0 18px;
+		}
 	}
 
 	&__description {

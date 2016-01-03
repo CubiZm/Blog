@@ -1,11 +1,17 @@
 .stuff {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-	height: 636px;
+	min-height: 640px;
+	@media($mobile) {
+		flex-direction: column;
+	}
 	&__item {
 		width: 33.3333%;
+		@media($mobile) {
+			width: 100%;
+		}
 		@include responsive(hight-screens) {
 			width: 25%;
 		}
@@ -17,7 +23,7 @@
 		position: relative;
 		background: url(../img/right-face--2.png) no-repeat;
 		background-position: -321px -374px;
-		height: 640px;
+		height: 641px;
 		@include responsive(hight-screens) {
 			width: 60%;
 			background-position:-28px -381px;
@@ -28,7 +34,10 @@
 		}
 	}
 	&__subitem {
-		height: 640px;
+		min-height: 640px;
+		@media($mobile) {
+			min-height: 100px;
+		}
 	}
 	&__subitem--flex {
 		display: flex;
@@ -44,6 +53,9 @@
 		background: url(../img/center-face.png) no-repeat;
 		background-position: -320px -70px;
 		height: 321px;
+		@media($mobile) {
+			display: none;
+		}
 	}
 	&__title {
 		@include content-title;

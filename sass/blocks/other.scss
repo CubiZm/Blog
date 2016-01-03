@@ -1,8 +1,10 @@
 .js-menu {
-	display: none;
-	@media($desktop) {
-		display: block;
+	display: block;
+
+	@media($mobile) {
+			display: none;
 	}
+
 }
 
 .js-menu--open {
@@ -14,5 +16,6 @@
 	width: 26px;
 	height: 26px;
 	position: absolute;
-	top: 0px;
+	top: 24px;
+	right: 10px;
 }

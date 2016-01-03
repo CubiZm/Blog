@@ -21,6 +21,7 @@
 	width: 66%;
 	padding: 55px 30px 0 0;
 	@media($mobile) {
+		display: none;   /*!!!!!!!!!!!!!*/
 		flex-direction: column-reverse;
 		padding: 55px 20px;
 		width: 100%;
