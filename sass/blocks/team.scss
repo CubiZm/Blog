@@ -30,6 +30,9 @@
 		@media($mobile) {
 			width: 100%;
 		}
+		@include responsive(tablet) {
+			width: 37%;
+		}
 		@include responsive(hight-screens) {
 			display: block;
 			width: 37%;
@@ -86,7 +89,7 @@
 	}
 	&__description {
 		color: $white;
-		width: 265px;
+		width: 272px;
 		@media($mobile) {
 			text-align: center;
 			margin: 0 auto;

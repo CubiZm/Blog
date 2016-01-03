@@ -9,6 +9,9 @@
 		text-transform: uppercase;
 		color: $text-color;
 		}
+		@include responsive(tablet) {
+			margin-top: -12px;
+		}
 	&__item {
 		@include responsive(hight-screens) {
 			display: block;

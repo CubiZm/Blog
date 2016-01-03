@@ -45,6 +45,14 @@
 			text-align: center;
 			display: none;
 		}
+		@include responsive(tablet) {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			display: none;
+		}
 	}
 	&__list {
 		display: flex;
@@ -52,6 +60,11 @@
 		padding: 20px 40px 0 0;
 		list-style-type: none;
 		@media($mobile) {
+			flex-direction: column;
+			background: white;
+			padding: 0;
+		}
+		@include responsive(tablet) {
 			flex-direction: column;
 			background: white;
 			padding: 0;
@@ -65,22 +78,26 @@
 			padding: 15px;
 			font-size: 17px;
 		}
+		@include responsive(tablet) {
+			padding: 15px;
+			font-size: 17px;
+		}
+
 	}
-	// &__menu--close {
-	// 	display: none;
-	// 	@media($mobile) {
-	// 		background: url(../img/no.svg) no-repeat;
-	// 		position: absolute;
-	// 		width: 15px;
-	// 		height: 15px;
-	// 	}
-	// }
 	&__menu--burger {
 		@media($mobile) {
 			background: url(../img/menu-burger.svg) no-repeat;
 			position: absolute;
 			top: 24px;
 			right: 10px;
+			height: 30px;
+			width: 30px;
+		}
+		@include responsive(tablet) {
+			background: url(../img/menu-burger.svg) no-repeat;
+			position: absolute;
+			top: 24px;
+			right: 35px;
 			height: 30px;
 			width: 30px;
 		}

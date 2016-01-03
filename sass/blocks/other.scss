@@ -2,7 +2,10 @@
 	display: block;
 
 	@media($mobile) {
-			display: none;
+		display: none;
+	}
+	@include responsive(tablet) {
+		display: none;
 	}
 
 }
@@ -17,5 +20,5 @@
 	height: 26px;
 	position: absolute;
 	top: 24px;
-	right: 10px;
+	right: 35px;
 }

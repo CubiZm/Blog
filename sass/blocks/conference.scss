@@ -80,6 +80,9 @@
 		color: $text-color;
 		padding: 21px 29px 4px 31px;
 		line-height: 60px;
+		@include responsive(tablet) {
+			padding: 21px 0px 4px 10px;
+		}
 	}
 	&__title--size {
 		font-size: 50px;
@@ -91,6 +94,9 @@
 		@media($mobile) {
 			padding: 220px 0px 0 18px;
 		}
+		@include responsive(tablet) {
+			padding: 286px 0px 0 62px;
+		}
 	}
 
 	&__description {
@@ -98,8 +104,14 @@
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;
+		@include responsive(tablet) {
+			margin: 0 8px;
+		}
 	}
 	&__description--white {
 		color: $white;
+		@include responsive(tablet) {
+			margin: 0 52px;
+		}
 	}
 }

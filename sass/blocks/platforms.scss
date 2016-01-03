@@ -79,6 +79,9 @@
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;
+		@include responsive(tablet) {
+			margin: 0 5px;
+		}
 	}
 	&__description--desktop {
 		@include responsive(hight-screens) {
@@ -98,6 +101,7 @@
 		background: url(../img/many-iphones-2.png) no-repeat, $bg-grey;
 		@media($mobile) {
 			order: 2;
+			background-position: -240px;
 		}
 		@include responsive(hight-screens) {
 			display: none;

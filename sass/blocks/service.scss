@@ -43,7 +43,9 @@
 		height: 240px;
 		@media($mobile) {
 			height: 150px;
-			background-position: 12px 12px;
+			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
+			background-position: 0px 12px;
+			background-size: cover;
 		}
 		@include responsive(hight-screens) {
 			background-position: 22px 104px;
