@@ -36,13 +36,16 @@
 		position: relative;
 		width: 66.666666%;
 		background: $bg-pink;
+		@media($mobile) {
+			width: 100%;
+		}
 		@include responsive(hight-screens) {
 			display: block;
-			width: 45%;
+			width: 45.33%;
 		}
 		@media($desktop-high) {
 			display: block;
-			width: 45%;
+			width: 45.33%;
 		}
 
 	}

@@ -14,17 +14,19 @@ html(lang='en')
 						img.header__img(src='../img/logo.png', alt='logo')
 				.header__wrapper
 					.header__menu
+						.header__menu--close
 						ul.header__list
 							li.header__item
-								a.header__link(href='#') About
+								a.header__link(href='#about') About
 							li.header__item
-								a.header__link(href='#') Meetings
+								a.header__link(href='#meetings') Meetings
 							li.header__item
-								a.header__link(href='#') Events
+								a.header__link(href='#events') Events
 							li.header__item
-								a.header__link(href='#') Projects
+								a.header__link(href='#projects') Projects
 							li.header__item
-								a.header__link(href='#') Contacts us
+								a.header__link(href='#contacts') Contacts us
+					.header__menu--burger
 					.social
 						.social__item.social__item--twit
 							a.social__link(href='#')
@@ -56,12 +58,11 @@ html(lang='en')
 				.team__item.team__item--center
 					h2.team__title Team
 					p.team__description A team comprises a group of people or animal linked in a common purpose.
-					//- img.team__img(src='../img/face.png', alt='logo' heigth="160")
 				.team__item.team__item--left
 
 		.wrapper-global
-			.service
-				.service__item.service__item--flex
+			.service#about
+				.service__item.service__item--bg
 					.service__subitem.service__subitem--img
 					.service__subitem
 						.service__title.service__title--main
@@ -84,10 +85,10 @@ html(lang='en')
 						.service__description.service__description--left Check out the timeline and be happy, dude.
 
 		.wrapper-global
-			.meetings
+			.meetings#meetings
 				.meetings__item.meetings__item--left
 				.meetings__item.meetings__item.meetings__item--center
-					.meetings__title Projects
+					.meetings__title Meetings
 				.meetings__item.meetings__item--right
 
 		.wrapper-global
@@ -106,7 +107,7 @@ html(lang='en')
 						.stuff__description.stuff__description--fonts Imagine if the new iPhone 5S was released a long time ago in a galaxy far far away
 
 		.wrapper-global
-			.events
+			.events#events
 				.events__item.events__item--left
 				.events__item.events__item.events__item--center
 					.events__title Events
@@ -129,7 +130,7 @@ html(lang='en')
 						.conference__img.conference__img--left
 
 		.wrapper-global
-			.project
+			.project#projects
 				.project__item.project__item--left
 				.project__item.project__item.project__item--center
 					.project__title Projects
@@ -154,7 +155,7 @@ html(lang='en')
 
 		.wrapper-global
 			footer.main-footer
-				.contacts
+				.contacts#contacts
 						.telephone +1 866 498 3588
 						.email hello@cloudcastlegroup.com
 						.social.social--footer
@@ -206,6 +207,7 @@ html(lang='en')
 							| bld.2, office 163
 							br
 							| +7 (846) 342 6826
+		script(src='js/common.js')
 
 
 

@@ -3,9 +3,15 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-	height: 640px;
+	min-height: 640px;
+	@media($mobile) {
+		flex-direction: column;
+	}
 	&__item {
 		width: 33.3333%;
+		@media($mobile) {
+			width: 100%;
+		}
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
@@ -13,7 +19,7 @@
 			width: 22%;
 		}
 	}
-	&__item--flex {
+	&__item--bg {
 		background: $smoke;
 		@include responsive(hight-screens) {
 			width: 56%;
@@ -26,12 +32,21 @@
 	}
 	&__subitem {
 		height: 320px;
+		@media($mobile) {
+			height: 145px;
+		}
 	}
 	&__subitem--img {
 		background: url(../img/more-people-high-screen.png) no-repeat, $smoke;
 		background-position: 12px 115px;
 		background-size: contain;
 		height: 240px;
+		@media($mobile) {
+			height: 150px;
+			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
+			background-position: 0px 12px;
+			background-size: cover;
+		}
 		@include responsive(hight-screens) {
 			background-position: 22px 104px;
 			background-size: cover;
@@ -49,6 +64,9 @@
 	&__subitem--height {
 		background: #eaebed;
 		height: 515px;
+		@media($mobile) {
+			height: 65px;
+		}
 	}
 	&__subitem--flex {
 		display: flex;
@@ -56,13 +74,16 @@
 		justify-content: center;
 	}
 	&__subitem--bg-right {
-		height: 125px;
+		height: 150px;
 		background: #eaebed;
 	}
 	&__subitem--center {
 		background: url(../img/hands.png) no-repeat;
-		background-position: -93px -56px;
-		height: 320px;
+		background-position: -93px -48px;
+		min-height: 345px;
+		@media($mobile) {
+			background-position: 0px 0px;
+		}
 		@include responsive(hight-screens) {
 			background-position: -33px -4px;
 			;
@@ -76,6 +97,9 @@
 		background: url(../img/right-block.png) no-repeat, #f1f1f1;
 		height: 515px;
 		background-position: -32px 49px;
+		@media($mobile) {
+			display: none;
+		}
 	}
 	&__title {
 		font-size: 26px;

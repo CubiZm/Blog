@@ -1,11 +1,15 @@
 .team {
 	overflow: hidden;
 	padding-top: 78px;
-	height: 240px;
+	min-height: 240px;
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
 	background: $bg-blue;
+	@media($mobile) {
+		display: block;
+
+	}
 	&__item {
 	}
 	&__item--right {
@@ -22,8 +26,13 @@
 		}
 	}
 	&__item--center {
-		// padding: 0 0 0 35px;
 		width: 33.333%;
+		@media($mobile) {
+			width: 100%;
+		}
+		@include responsive(tablet) {
+			width: 37%;
+		}
 		@include responsive(hight-screens) {
 			display: block;
 			width: 37%;
@@ -52,6 +61,10 @@
 	&__item--img {
 		background: url(../img/face.png) no-repeat;
 		width: 60%;
+		@media($mobile) {
+			width: 100%;
+			height: 81px;
+		}
 		@include responsive(hight-screens) {
 			display: block;
 			width: 53%;
@@ -60,7 +73,7 @@
 			display: block;
 			width: 53%;
 		}
-		}
+	}
 
 
 	&__title {
@@ -69,10 +82,19 @@
 		color: $white;
 		text-transform: uppercase;
 		padding: 45px 0 0 0;
+		@media($mobile) {
+			padding: 5px 0 0px 0;
+			text-align: center;
+		}
 	}
 	&__description {
 		color: $white;
-		width: 265px;
+		width: 272px;
+		@media($mobile) {
+			text-align: center;
+			margin: 0 auto;
+			padding-bottom: 15px;
+		}
 	}
 
 }

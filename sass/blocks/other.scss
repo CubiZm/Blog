@@ -1,0 +1,24 @@
+.js-menu {
+	display: block;
+
+	@media($mobile) {
+		display: none;
+	}
+	@include responsive(tablet) {
+		display: none;
+	}
+
+}
+
+.js-menu--open {
+	display: block;
+}
+
+.header__js-menu--close {
+	background: url(../img/no.svg) no-repeat;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 24px;
+	right: 35px;
+}
