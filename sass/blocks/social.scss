@@ -4,6 +4,9 @@
 		justify-content: space-between;
 		padding: 21px 60px 21px 0px;
 		align-items: center;
+		@media($mobile) {
+			display: none;
+		}
 		&__item {
 			padding-left: 15px;
 		}

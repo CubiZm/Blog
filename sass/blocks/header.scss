@@ -39,6 +39,14 @@
 	}
 	&__menu {
 		width: 550px;
+		@media($mobile) {
+			width: 320px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			display: none;
+		}
 	}
 	&__list {
 		display: flex;
@@ -48,15 +56,32 @@
 		@media($mobile) {
 			flex-direction: column;
 			background: white;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
+			padding: 0;
 		}
 	}
 	&__item {
 		font-weight: 900;
 		font-size: 13px;
 		text-transform: uppercase;
+		@media($mobile) {
+			padding: 15px;
+			font-size: 17px;
+		}
+	}
+	&__menu--close {
+		display: none;
+		@media($mobile) {
+			background: url(../img/no.svg) no-repeat;
+			position: absolute;
+			width: 15px;
+			height: 15px;
+		}
+	}
+	&__menu--burger {
+		@media($mobile) {
+			background: url(../img/menu-burger.svg) no-repeat;
+			width: 30px;
+			margin: 21px 70px;
+		}
 	}
 }

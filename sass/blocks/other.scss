@@ -1,0 +1,18 @@
+.js-menu {
+	display: none;
+	@media($desktop) {
+		display: block;
+	}
+}
+
+.js-menu--open {
+	display: block;
+}
+
+.header__js-menu--close {
+	background: url(../img/no.svg) no-repeat;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 0px;
+}

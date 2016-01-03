@@ -38,11 +38,11 @@
 		background: $bg-blue;
 		@include responsive(hight-screens) {
 			display: block;
-			width: 45%;
+			width: 45.33%;
 		}
 		@media($desktop-high) {
 			display: block;
-			width: 45%;
+			width: 45.33%;
 		}
 
 	}

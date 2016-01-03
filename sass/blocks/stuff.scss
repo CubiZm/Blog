@@ -82,9 +82,11 @@
 		padding-left: 28px;
 		@include responsive(hight-screens) {
 			color: $text-color;
+			padding-left: 10px;
 		}
 		@media($desktop-high) {
 			color: $text-color;
+			padding-left: 10px;
 		}
 	}
 }
