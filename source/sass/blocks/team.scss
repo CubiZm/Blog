@@ -8,17 +8,15 @@
 	background: $bg-blue;
 	@media($mobile) {
 		display: block;
-
 	}
-	&__item {
-	}
+	&__item {}
 	&__item--right {
 		display: none;
 		@include responsive(hight-screens) {
 			display: block;
 			background: $white;
 			width: 30%;
-			}
+		}
 		@media($desktop-high) {
 			display: block;
 			background: $white;
@@ -37,7 +35,7 @@
 			display: block;
 			width: 37%;
 			padding: 0 0 0 35px;
-			}
+		}
 		@media($desktop-high) {
 			display: block;
 			width: 37%;
@@ -50,16 +48,15 @@
 			display: block;
 			background: $white;
 			width: 15%;
-			}
+		}
 		@media($desktop-high) {
 			display: block;
 			background: $white;
 			width: 15%;
 		}
 	}
-
 	&__item--img {
-		background: url(../img/face.png) no-repeat;
+		background: url(../img/team.png) no-repeat;
 		width: 60%;
 		@media($mobile) {
 			width: 100%;
@@ -68,14 +65,12 @@
 		@include responsive(hight-screens) {
 			display: block;
 			width: 53%;
-			}
+		}
 		@media($desktop-high) {
 			display: block;
 			width: 53%;
 		}
 	}
-
-
 	&__title {
 		font-size: 25px;
 		line-height: 9px;
@@ -96,5 +91,4 @@
 			padding-bottom: 15px;
 		}
 	}
-
 }

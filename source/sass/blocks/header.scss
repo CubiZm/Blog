@@ -12,6 +12,7 @@
 	@media($desktop-high) {
 		justify-content: space-between;
 		background: $smoke;
+		max-width: 1440px;
 	}
 	&__wrapper {
 		display: flex;
@@ -82,7 +83,6 @@
 			padding: 15px;
 			font-size: 17px;
 		}
-
 	}
 	&__menu--burger {
 		@media($mobile) {

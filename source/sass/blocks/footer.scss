@@ -1,11 +1,17 @@
 .main-footer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		height: 205px;
-		@media($mobile) {
-			flex-direction: column;
-		}
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 205px;
+	@media($mobile) {
+		flex-direction: column;
+	}
+	@include responsive(hight-screens) {
+		justify-content: center;
+	}
+	@media($desktop-high) {
+		justify-content: center;
+	}
 }
 
 .contacts {
@@ -25,22 +31,20 @@
 		padding: 0;
 		width: 100%;
 	}
-
 	&__city {
 		font-family: Arial;
 		font-weight: bold;
 		color: #424141;
 		padding-bottom: 20px;
-		@media($mobile) {
-		}
+		@media($mobile) {}
 	}
 	&__item {
 		@media($mobile) {
 			width: 100%;
 			padding: 0px 78px;
 			text-align: center;
+		}
 	}
-}
 	&__text {
 		font-family: Arial;
 		color: #424141;
@@ -58,6 +62,16 @@
 	color: #424141;
 	@media($mobile) {
 		padding: 40px 0 5px 35px;
+	}
+	@include responsive(hight-screens) {
+		background: url(../img/map.png) no-repeat;
+		background-position: -2px 55px;
+		background-size: 16px;
+	}
+	@media($desktop-high) {
+		background: url(../img/map.png) no-repeat;
+		background-position: -2px 55px;
+		background-size: 16px;
 	}
 }
 

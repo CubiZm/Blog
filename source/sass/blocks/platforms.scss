@@ -9,7 +9,7 @@
 	}
 	&__item {
 		width: 33.3333%;
-	@media($mobile) {
+		@media($mobile) {
 			width: 100%;
 		}
 	}
@@ -75,12 +75,13 @@
 		}
 	}
 	&__description {
+		position: relative;
 		width: 250px;
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;
 		@include responsive(tablet) {
-			margin: 0 5px;
+			margin: 0 10px;
 		}
 	}
 	&__description--desktop {
@@ -95,6 +96,22 @@
 			padding-top: 22px;
 			padding-left: 65px;
 			width: 320px;
+		}
+	}
+	&__description--desktop:before {
+		content: '+';
+		display: block;
+		position: absolute;
+		bottom: 50px;
+		padding: 2px 7px;
+		width: 42px;
+		height: 42px;
+		border: 1px solid $text-color;
+		border-radius: 50%;
+		font-size: 30px;
+		color: $text-color;
+		@media($mobile) {
+			display: none;
 		}
 	}
 	&__invisible {

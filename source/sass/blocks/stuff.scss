@@ -24,7 +24,7 @@
 	}
 	&__item--right {
 		position: relative;
-		background: url(../img/right-face--2.png) no-repeat;
+		background: url(../img/stuff-right.png) no-repeat;
 		background-position: -321px -374px;
 		height: 641px;
 		@media($mobile) {
@@ -34,11 +34,11 @@
 		}
 		@include responsive(hight-screens) {
 			width: 60%;
-			background-position:-28px -381px;
+			background-position: -28px -381px;
 		}
 		@media($desktop-high) {
 			width: 60%;
-			background-position:-28px -381px;
+			background-position: -28px -381px;
 		}
 	}
 	&__subitem {
@@ -53,16 +53,15 @@
 		justify-content: center;
 	}
 	&__img--left {
-		background: url(../img/left-block.png) no-repeat;
-		// background-position: -304px -90px;
-		height: 640px;
+		background: url(../img/stuff-left.png) no-repeat;
+		height: 641px;
 		@media($mobile) {
 			height: 320px;
 			background-size: cover;
 		}
 	}
 	&__img--center {
-		background: url(../img/center-face.png) no-repeat;
+		background: url(../img/stuff-center.png) no-repeat;
 		background-position: -320px -70px;
 		height: 321px;
 		@media($mobile) {
@@ -75,7 +74,7 @@
 		padding: 21px 29px 4px 29px;
 		line-height: 60px;
 		@include responsive(tablet) {
-			padding: 21px 4px 15px;
+			// padding: 21px 4px 15px;
 		}
 	}
 	&__title--size {
@@ -116,37 +115,39 @@
 	&__description--fonts {
 		color: $white;
 		padding-top: 13px;
-		padding-left: 28px;
+		padding-left: 10px;
 		@media($mobile) {
 			padding-left: 0px;
 			color: $black;
 		}
-		@include responsive(tablet) {
-			padding-left: 10px;
-		}
 		@include responsive(hight-screens) {
 			color: $text-color;
-			padding-left: 10px;
 		}
 		@media($desktop-high) {
 			color: $text-color;
-			padding-left: 10px;
 		}
 	}
-}
-
-.hash {
-	position: absolute;
-	top: 290px;
-	left: 40px;
-	display: none;
-	width: 25px;
-	@include responsive(hight-screens) {
+	&__description--fonts:before {
+		content: '+';
 		display: block;
-		color: lighten(#4d3a3b, 0.3)
-	}
-	@media($desktop-high) {
-		display: block;
-		color: #999999;
+		position: absolute;
+		bottom: 50px;
+		padding: 2px 7px;
+		width: 42px;
+		height: 42px;
+		border: 1px solid $white;
+		border-radius: 50%;
+		font-size: 30px;
+		color: $white;
+		@media($mobile) {
+			display: none;
+		}
+		// 	@include responsive(hight-screens) {
+		// 		border: 1px solid $text-color;
+		// 	}
+		// 	@media($desktop-high) {
+		// 		border: 1px solid $text-color;
+		// 	}
+		// }
 	}
 }

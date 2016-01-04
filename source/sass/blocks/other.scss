@@ -1,0 +1,53 @@
+.hash {
+	position: absolute;
+	top: 290px;
+	left: 40px;
+	display: none;
+	width: 25px;
+	@include responsive(hight-screens) {
+		display: block;
+		color: lighten(#4d3a3b, 0.3)
+	}
+	@media($desktop-high) {
+		display: block;
+		color: #999999;
+	}
+}
+
+.js-menu {
+	display: block;
+	@media($mobile) {
+		display: none;
+	}
+	@include responsive(tablet) {
+		display: none;
+	}
+}
+
+.js-menu--open {
+	@media($mobile) {
+		display: block;
+	}
+	@include responsive(tablet) {
+		display: block;
+	}
+}
+
+.header__js-menu--close {
+	@media($mobile) {
+		background: url(../img/no.svg) no-repeat;
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 24px;
+		right: 15px;
+	}
+	@include responsive(tablet) {
+		background: url(../img/no.svg) no-repeat;
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 24px;
+		right: 35px;
+	}
+}
