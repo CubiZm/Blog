@@ -25,14 +25,29 @@
 }
 
 .js-menu--open {
-	display: block;
+	@media($mobile) {
+		display: block;
+	}
+	@include responsive(tablet) {
+		display: block;
+	}
 }
 
 .header__js-menu--close {
-	background: url(../img/no.svg) no-repeat;
-	width: 26px;
-	height: 26px;
-	position: absolute;
-	top: 24px;
-	right: 35px;
+	@media($mobile) {
+		background: url(../img/no.svg) no-repeat;
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 24px;
+		right: 15px;
+	}
+	@include responsive(tablet) {
+		background: url(../img/no.svg) no-repeat;
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 24px;
+		right: 35px;
+	}
 }

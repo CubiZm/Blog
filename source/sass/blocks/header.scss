@@ -12,6 +12,7 @@
 	@media($desktop-high) {
 		justify-content: space-between;
 		background: $smoke;
+		max-width: 1440px;
 	}
 	&__wrapper {
 		display: flex;
