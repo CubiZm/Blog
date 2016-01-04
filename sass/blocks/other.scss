@@ -1,13 +1,27 @@
+.hash {
+	position: absolute;
+	top: 290px;
+	left: 40px;
+	display: none;
+	width: 25px;
+	@include responsive(hight-screens) {
+		display: block;
+		color: lighten(#4d3a3b, 0.3)
+	}
+	@media($desktop-high) {
+		display: block;
+		color: #999999;
+	}
+}
+
 .js-menu {
 	display: block;
-
 	@media($mobile) {
 		display: none;
 	}
 	@include responsive(tablet) {
 		display: none;
 	}
-
 }
 
 .js-menu--open {

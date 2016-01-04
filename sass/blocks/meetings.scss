@@ -8,7 +8,7 @@
 		font-size: 36px;
 		text-transform: uppercase;
 		color: $text-color;
-		}
+	}
 	&__item {
 		@include responsive(hight-screens) {
 			display: block;
@@ -47,9 +47,8 @@
 			display: block;
 			width: 45.33%;
 		}
-
 	}
-		&__item--center:before {
+	&__item--center:before {
 		content: '+';
 		display: block;
 		position: absolute;
