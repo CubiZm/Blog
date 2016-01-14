@@ -1,20 +1,19 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-// var cmq = require('gulp-combine-media-queries');
-var combineMq = require("gulp-combine-mq");
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var minifyCss = require('gulp-minify-css');
-var rimraf = require('rimraf');
-var jade = require('gulp-jade');
-var browserSync = require('browser-sync').create();
+var gulp = require("gulp"),
+		sass = require("gulp-sass"),
+		plumber = require("gulp-plumber"),
+		postcss = require("gulp-postcss"),
+		autoprefixer = require("autoprefixer"),
+		rename = require("gulp-rename"),
+		imagemin = require("gulp-imagemin"),
+		combineMq = require("gulp-combine-mq"),
+		uglify = require('gulp-uglify'),
+		concat = require('gulp-concat'),
+		minifyCss = require('gulp-minify-css'),
+		rimraf = require('rimraf'),
+		jade = require('gulp-jade'),
+		browserSync = require('browser-sync').create();
 
 var scriptList = [
 	'source/js/common.js'
@@ -74,20 +73,6 @@ gulp.task('clean', function (cb) {
 return rimraf('build', cb);
 });
 
-
-gulp.task("start", function() {
-	gulp.watch("sass/**/*.{sass,scss}", ["style"]);
-	gulp.watch("jade/*.jade"), ["jade"];
-	});
-
-gulp.task('jade', function() {
-
-	gulp.src('./jade/*.jade')
-		.pipe(jade())
-		.pipe(gulp.dest('./'))
-		// gulp.watch("jade/*.jade"), ["jade"];
-});
-
 // Static Server + watching scss/html files
 gulp.task('server', ['style'], function() {
 
@@ -100,8 +85,4 @@ gulp.task('server', ['style'], function() {
 		gulp.watch("jade/*.jade"), ["jade"];
 		gulp.watch("*.html").on('change', browserSync.reload);
 });
-
-
-gulp.task('default', ['serve']);
-
 

@@ -8,25 +8,25 @@ html(lang='en')
 		link(rel='icon', href='img/favicon.ico', type='image/x-icon')
 	body
 		.wrapper-global
-			.header
+			header.header
 				.header__logo
 					a.header__link(href='#')
 						img.header__img(src='img/logo.png', alt='logo')
 				.header__wrapper
-					.header__menu
-						.header__menu--close
-						ul.header__list
-							li.header__item
-								a.header__link(href='#about') About
-							li.header__item
-								a.header__link(href='#meetings') Meetings
-							li.header__item
-								a.header__link(href='#events') Events
-							li.header__item
-								a.header__link(href='#projects') Projects
-							li.header__item
-								a.header__link(href='#contacts') Contacts us
-					.header__menu--burger
+					nav.menu
+						.menu--close
+						ul.menu__list
+							li.menu__item
+								a.menu__link(href='#about') About
+							li.menu__item
+								a.menu__link(href='#meetings') Meetings
+							li.menu__item
+								a.menu__link(href='#events') Events
+							li.menu__item
+								a.menu__link(href='#projects') Projects
+							li.menu__item
+								a.menu__link(href='#contacts') Contacts us
+					.menu--burger
 					.social
 						.social__item.social__item--twit
 							a.social__link(href='#')

@@ -36,7 +36,10 @@
 	&__img {
 		padding: 30px 0 0 35px;
 	}
-	&__menu {
+}
+
+
+	.menu {
 		width: 550px;
 		@media($mobile) {
 			width: 100%;
@@ -54,7 +57,6 @@
 			text-align: center;
 			display: none;
 		}
-	}
 	&__list {
 		display: flex;
 		justify-content: space-around;
@@ -84,7 +86,11 @@
 			font-size: 17px;
 		}
 	}
-	&__menu--burger {
+	&__link {
+		text-decoration: none;
+		color: $black;
+	}
+	&--burger {
 		@media($mobile) {
 			background: url(../img/menu-burger.svg) no-repeat;
 			position: absolute;

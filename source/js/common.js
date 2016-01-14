@@ -1,6 +1,6 @@
 //menu
-var parent = document.querySelector(".header__menu");
-var toggle = document.querySelector(".header__menu--burger");
+var parent = document.querySelector(".menu");
+var toggle = document.querySelector(".menu--burger");
 
 parent.classList.add('js-menu');
 
