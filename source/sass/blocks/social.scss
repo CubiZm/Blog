@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	padding: 21px 60px 21px 0px;
 	align-items: center;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		display: none;
 	}
 	@include responsive(tablet) {
@@ -37,7 +37,7 @@
 	&--footer {
 		justify-content: space-around;
 		padding-left: 5px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}

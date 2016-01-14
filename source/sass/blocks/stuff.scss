@@ -4,12 +4,12 @@
 	justify-content: space-around;
 	width: 100%;
 	min-height: 640px;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		flex-direction: column;
 	}
 	&__item {
 		width: 33.3333%;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 		}
 		@include responsive(tablet) {
@@ -27,7 +27,7 @@
 		background: url(../img/stuff-right.png) no-repeat;
 		background-position: -321px -374px;
 		height: 641px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 320px;
 			background-size: cover;
 			background-position: 0px -100px;
@@ -43,7 +43,7 @@
 	}
 	&__subitem {
 		min-height: 640px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			min-height: 100px;
 		}
 	}
@@ -55,7 +55,7 @@
 	&__img--left {
 		background: url(../img/stuff-left.png) no-repeat;
 		height: 641px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 320px;
 			background-size: cover;
 		}
@@ -64,7 +64,7 @@
 		background: url(../img/stuff-center.png) no-repeat;
 		background-position: -320px -70px;
 		height: 321px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}
@@ -85,7 +85,7 @@
 		line-height: 65px;
 		padding-top: 324px;
 		padding-left: 34px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			padding-top: 100px;
 			color: $text-color;
 		}
@@ -116,7 +116,7 @@
 		color: $white;
 		padding-top: 13px;
 		padding-left: 10px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			padding-left: 0px;
 			color: $black;
 		}
@@ -139,7 +139,7 @@
 		border-radius: 50%;
 		font-size: 30px;
 		color: $white;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 		// 	@include responsive(hight-screens) {

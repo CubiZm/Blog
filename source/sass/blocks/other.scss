@@ -16,7 +16,7 @@
 
 .js-menu {
 	display: block;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		display: none;
 	}
 	@include responsive(tablet) {
@@ -25,7 +25,7 @@
 }
 
 .js-menu--open {
-	@media($mobile) {
+	@include responsive(handhelds) {
 		display: block;
 	}
 	@include responsive(tablet) {
@@ -34,7 +34,7 @@
 }
 
 .header__js-menu--close {
-	@media($mobile) {
+	@include responsive(handhelds) {
 		background: url(../img/no.svg) no-repeat;
 		width: 26px;
 		height: 26px;

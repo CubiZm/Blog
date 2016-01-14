@@ -4,12 +4,12 @@
 	justify-content: space-around;
 	width: 100%;
 	min-height: 640px;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		flex-direction: column;
 	}
 	&__item {
 		width: 33.3333%;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 		}
 	}
@@ -28,7 +28,7 @@
 	}
 	&__subitem--bg {
 		background: $bg-grey;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: flex;
 			flex-direction: column;
 		}
@@ -46,7 +46,7 @@
 	&__img--left {
 		background: url(../img/hand-iphone.png) no-repeat;
 		height: 640px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}
@@ -110,13 +110,13 @@
 		border-radius: 50%;
 		font-size: 30px;
 		color: $text-color;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}
 	&__invisible {
 		background: url(../img/many-iphones-2.png) no-repeat, $bg-grey;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			order: 2;
 			background-position: -240px;
 		}

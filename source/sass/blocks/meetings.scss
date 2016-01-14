@@ -36,7 +36,7 @@
 		position: relative;
 		width: 66.666666%;
 		background: $bg-yellow;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 		}
 		@include responsive(hight-screens) {

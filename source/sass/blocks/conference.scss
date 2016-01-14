@@ -4,12 +4,12 @@
 	justify-content: space-around;
 	width: 100%;
 	min-height: 640px;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		flex-direction: column;
 	}
 	&__item {
 		width: 33.3333%;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 		}
 		@include responsive(hight-screens) {
@@ -23,7 +23,7 @@
 		background: url(../img/right-face-3.png) no-repeat;
 		background-position: -484px -8px;
 		height: 640px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 480px;
 		}
 		@include responsive(hight-screens) {
@@ -41,7 +41,7 @@
 	}
 	&__subitem {
 		min-height: 640px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			min-height: 0px;
 		}
 	}
@@ -54,7 +54,7 @@
 		background: url(../img/boy-robot.png) no-repeat;
 		background-position: -300px -90px;
 		height: 640px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 		@media($desktop-high) {
@@ -85,7 +85,7 @@
 	&__title--white {
 		color: $white;
 		padding: 286px 0px 0 18px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			padding: 220px 0px 0 18px;
 		}
 		@include responsive(tablet) {
@@ -120,7 +120,7 @@
 		border-radius: 50%;
 		font-size: 30px;
 		color: $white;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}

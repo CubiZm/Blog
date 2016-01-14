@@ -41,7 +41,7 @@
 
 	.menu {
 		width: 550px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 			position: absolute;
 			top: 0;
@@ -62,7 +62,7 @@
 		justify-content: space-around;
 		padding: 20px 40px 0 0;
 		list-style-type: none;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			flex-direction: column;
 			background: white;
 			padding: 0;
@@ -77,7 +77,7 @@
 		font-weight: 900;
 		font-size: 13px;
 		text-transform: uppercase;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			padding: 15px;
 			font-size: 17px;
 		}
@@ -91,7 +91,7 @@
 		color: $black;
 	}
 	&--burger {
-		@media($mobile) {
+		@include responsive(handhelds) {
 			background: url(../img/menu-burger.svg) no-repeat;
 			position: absolute;
 			top: 24px;

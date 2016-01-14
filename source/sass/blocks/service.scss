@@ -4,12 +4,12 @@
 	justify-content: space-around;
 	width: 100%;
 	min-height: 640px;
-	@media($mobile) {
+	@include responsive(handhelds) {
 		flex-direction: column;
 	}
 	&__item {
 		width: 33.3333%;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			width: 100%;
 		}
 		@include responsive(hight-screens) {
@@ -32,7 +32,7 @@
 	}
 	&__subitem {
 		height: 320px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 145px;
 		}
 	}
@@ -41,7 +41,7 @@
 		background-position: 12px 115px;
 		background-size: contain;
 		height: 240px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 150px;
 			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
 			background-position: 0px 12px;
@@ -64,7 +64,7 @@
 	&__subitem--height {
 		background: #eaebed;
 		height: 515px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			height: 65px;
 		}
 	}
@@ -81,7 +81,7 @@
 		background: url(../img/hands.png) no-repeat;
 		background-position: -93px -48px;
 		min-height: 345px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			background-position: 0px 0px;
 		}
 		@include responsive(hight-screens) {
@@ -97,7 +97,7 @@
 		background: url(../img/service-right.png) no-repeat, #f1f1f1;
 		height: 515px;
 		background-position: -32px 49px;
-		@media($mobile) {
+		@include responsive(handhelds) {
 			display: none;
 		}
 	}
