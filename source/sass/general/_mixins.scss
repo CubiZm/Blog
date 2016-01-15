@@ -9,11 +9,11 @@
 }
 
 @mixin content-title($size: 58px, $weight:400) {
-		font: {
-			size: $font-size-title;
-			weight: $weight;
-		}
-		color: $text-color;
+	font: {
+		size: $font-size-title;
+		weight: $weight;
+	}
+	color: $text-color;
 }
 
 @mixin menu-mobile {
@@ -45,25 +45,58 @@
 	width: 30px;
 }
 
+@mixin menu-close {
+	background: url(../img/no.svg) no-repeat;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 24px;
+	right: 15px;
+}
+
+@mixin plus {
+	content: '+';
+	display: block;
+	position: absolute;
+	right: 26px;
+	top: 17px;
+	padding: 2px 7px;
+	width: 42px;
+	height: 42px;
+	border: 1px solid #483435;
+	border-radius: 50%;
+	font-size: 30px;
+}
 
 @mixin responsive($media) {
-	@if $media == handhelds {
-		@media only screen and (max-width: $mobile) { @content; }
+	@if $media==handhelds {
+		@media only screen and (max-width: $mobile) {
+			@content;
+		}
 	}
-	@else if $media == medium-screens {
-		@media only screen and (min-width: $mobile + 1) and (max-width: $mobile-hight - 1) { @content; }
+	@else if $media==medium-screens {
+		@media only screen and (min-width: $mobile + 1) and (max-width: $mobile-hight - 1) {
+			@content;
+		}
 	}
-	@else if $media == tablet {
-		@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) { @content; }
+	@else if $media==tablet {
+		@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+			@content;
+		}
 	}
-
-	@else if $media == wide-screens {
-		@media only screen and (min-width: $tablet) { @content; }
+	@else if $media==wide-screens {
+		@media only screen and (min-width: $tablet) {
+			@content;
+		}
 	}
-	@else if $media == hight-screens {
-		@media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) { @content; }
+	@else if $media==hight-screens {
+		@media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) {
+			@content;
+		}
 	}
-	@else if $media == super-hight-screens {
-		@media only screen and (min-width: $desktop) { @content; }
+	@else if $media==super-hight-screens {
+		@media only screen and (min-width: $desktop) {
+			@content;
+		}
 	}
 }

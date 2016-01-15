@@ -15,7 +15,7 @@
 			width: 320px;
 			min-height: 5px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			width: 320px;
 			min-height: 5px;
@@ -25,11 +25,11 @@
 		display: none;
 		@include responsive(hight-screens) {
 			display: block;
-			width: 22.5%;
+			width: 22.9%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
-			width: 22.5%;
+			width: 22.9%;
 		}
 	}
 	&__item--center {
@@ -43,30 +43,20 @@
 			display: block;
 			width: 45.33%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			width: 45.33%;
 		}
 	}
 	&__item--center:before {
-		content: '+';
-		display: block;
-		position: absolute;
-		right: 26px;
-		top: 17px;
-		padding: 2px 7px;
-		width: 42px;
-		height: 42px;
-		border: 1px solid #483435;
-		border-radius: 50%;
-		font-size: 30px;
+		@include plus;
 	}
 	&__item--right {
 		display: none;
 		@include responsive(hight-screens) {
 			width: 33%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 33%;
 		}
 	}

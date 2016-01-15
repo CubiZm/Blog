@@ -21,7 +21,7 @@
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 22%;
 		}
 	}
@@ -42,8 +42,7 @@
 			width: 57%;
 			background-position: 0px 0px;
 		}
-		@include responsive(max-hight-screens) {
-			justify-content: flex-end;
+		@include responsive(super-hight-screens) {
 			justify-content: flex-end;
 			width: 57%;
 			background-position: 0px 0px;
@@ -73,7 +72,7 @@
 		@include responsive(medium-screens) {
 			display: none;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			background-position: -300px -90px;
 		}
 	}
@@ -132,16 +131,8 @@
 		}
 	}
 	&__description--white:before {
-		content: '+';
-		display: block;
-		position: absolute;
-		bottom: 70px;
-		padding: 2px 7px;
-		width: 42px;
-		height: 42px;
+		@include plus;
 		border: 1px solid $white;
-		border-radius: 50%;
-		font-size: 30px;
 		color: $white;
 		@include responsive(handhelds) {
 			display: none;

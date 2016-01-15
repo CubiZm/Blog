@@ -8,7 +8,7 @@
 		display: block;
 		color: lighten(#4d3a3b, 0.3)
 	}
-	@include responsive(max-hight-screens) {
+	@include responsive(super-hight-screens) {
 		display: block;
 		color: #999999;
 	}
@@ -41,27 +41,13 @@
 
 .header__js-menu--close {
 	@include responsive(handhelds) {
-		background: url(../img/no.svg) no-repeat;
-		width: 26px;
-		height: 26px;
-		position: absolute;
-		top: 24px;
-		right: 15px;
+		@include menu-close;
 	}
 	@include responsive(medium-screens) {
-		background: url(../img/no.svg) no-repeat;
-		width: 26px;
-		height: 26px;
-		position: absolute;
-		top: 24px;
-		right: 15px;
+		@include menu-close;
 	}
 	@include responsive(tablet) {
-		background: url(../img/no.svg) no-repeat;
-		width: 26px;
-		height: 26px;
-		position: absolute;
-		top: 24px;
+		@include menu-close;
 		right: 35px;
 	}
 }

@@ -17,7 +17,7 @@
 			background: $white;
 			width: 30%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			background: $white;
 			width: 30%;
@@ -36,7 +36,7 @@
 			width: 37%;
 			padding: 0 0 0 35px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			width: 37%;
 			padding: 0 0 0 35px;
@@ -49,7 +49,7 @@
 			background: $white;
 			width: 15%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			background: $white;
 			width: 15%;
@@ -66,7 +66,7 @@
 			display: block;
 			width: 53%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: block;
 			width: 53%;
 		}
@@ -84,7 +84,7 @@
 	}
 	&__description {
 		color: $white;
-		width: 272px;
+		// width: 272px;
 		@include responsive(handhelds) {
 			text-align: center;
 			margin: 0 auto;

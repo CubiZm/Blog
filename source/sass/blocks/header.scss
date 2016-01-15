@@ -9,7 +9,7 @@
 		justify-content: space-between;
 		background: $smoke;
 	}
-	@include responsive(max-hight-screens) {
+	@include responsive(super-hight-screens) {
 		justify-content: space-between;
 		background: $smoke;
 		max-width: 1440px;
@@ -21,7 +21,7 @@
 			display: flex;
 			justify-content: flex-end;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: flex;
 			justify-content: flex-end;
 		}
@@ -38,18 +38,17 @@
 	}
 }
 
-
-	.menu {
-		width: 550px;
-		@include responsive(handhelds) {
-			@include menu-mobile;
-		}
-		@include responsive(medium-screens) {
-			@include menu-mobile;
-		}
-		@include responsive(tablet) {
-			@include menu-mobile;
-		}
+.menu {
+	width: 550px;
+	@include responsive(handhelds) {
+		@include menu-mobile;
+	}
+	@include responsive(medium-screens) {
+		@include menu-mobile;
+	}
+	@include responsive(tablet) {
+		@include menu-mobile;
+	}
 	&__list {
 		display: flex;
 		justify-content: space-around;

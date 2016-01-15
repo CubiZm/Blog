@@ -21,7 +21,7 @@
 		@include responsive(hight-screens) {
 			width: 25%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 25%;
 		}
 	}
@@ -44,7 +44,7 @@
 			width: 60%;
 			background-position: -28px -381px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 60%;
 			background-position: -28px -381px;
 		}
@@ -82,9 +82,6 @@
 		@include responsive(handhelds) {
 			display: none;
 		}
-		@include responsive(tablet) {
-			// height: 340px;
-		}
 		@include responsive(medium-screens) {
 			display: none;
 		}
@@ -94,16 +91,16 @@
 		color: $text-color;
 		padding: 21px 29px 4px 29px;
 		line-height: 60px;
-	@include responsive(medium-screens) {
-		font-size: 42px;
-	}
+		@include responsive(medium-screens) {
+			font-size: 42px;
+		}
 	}
 	&__title--size {
 		font-size: 58px;
-	@include responsive(medium-screens) {
-		font-size: 42px;
+		@include responsive(medium-screens) {
+			font-size: 42px;
+		}
 	}
-}
 	&__title--fonts {
 		color: $white;
 		line-height: 65px;
@@ -127,7 +124,7 @@
 			font-size: 73px;
 			color: $text-color;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 300px;
 			font-size: 73px;
 			color: $text-color;
@@ -158,32 +155,22 @@
 		@include responsive(hight-screens) {
 			color: $text-color;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			color: $text-color;
 		}
 	}
 	&__description--fonts:before {
-		content: '+';
-		display: block;
-		position: absolute;
-		bottom: 50px;
-		padding: 2px 7px;
-		width: 42px;
-		height: 42px;
+		@include plus;
 		border: 1px solid $white;
-		border-radius: 50%;
-		font-size: 30px;
 		color: $white;
-		@include responsive(handhelds) {
-
-		}
+		@include responsive(handhelds) {}
 		@include responsive(medium-screens) {
 			display: none;
 		}
 		// 	@include responsive(hight-screens) {
 		// 		border: 1px solid $text-color;
 		// 	}
-		// 	@include responsive(max-hight-screens) {
+		// 	@include responsive(super-hight-screens) {
 		// 		border: 1px solid $text-color;
 		// 	}
 		// }

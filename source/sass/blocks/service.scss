@@ -21,7 +21,7 @@
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 22%;
 		}
 	}
@@ -31,7 +31,7 @@
 			width: 56%;
 			background: $smoke;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 56%;
 			background: $smoke;
 		}
@@ -47,7 +47,7 @@
 	}
 	&__subitem--img {
 		background: url(../img/more-people-high-screen.png) no-repeat, $smoke;
-		background-position: 12px 115px;
+		background-position: 12px 65px;
 		background-size: contain;
 		height: 240px;
 		@include responsive(handhelds) {
@@ -57,18 +57,16 @@
 			background-size: cover;
 		}
 		@include responsive(medium-screens) {
-			height: 150px;
+			height: 240px;
 			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
-			background-position: 0px 12px;
+			background-position: 0 0;
 			background-size: cover;
 		}
 		@include responsive(hight-screens) {
-			background-position: 22px 104px;
 			background-size: cover;
-			margin: 0 auto;
-			height: 345px;
+			height: 276px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			background-position: 22px 0px;
 			background-size: cover;
 		}
@@ -109,7 +107,7 @@
 		@include responsive(hight-screens) {
 			background-position: -33px -4px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			background-size: cover;
 			background-position: 0;
 		}
@@ -140,7 +138,7 @@
 		@include responsive(hight-screens) {
 			padding: 32px 12px 0 0px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			padding: 32px 12px 0 0px;
 		}
 	}
@@ -155,7 +153,7 @@
 			display: inline-block;
 			padding-right: 6px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: inline-block;
 			padding-right: 6px;
 		}
@@ -178,7 +176,7 @@
 			padding: 25px 0 0 0px;
 			width: 545px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			padding: 25px 0 0 0px;
 			width: 545px;
 		}

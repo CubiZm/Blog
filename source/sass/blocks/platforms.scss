@@ -20,7 +20,7 @@
 		@include responsive(hight-screens) {
 			width: 82%;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 82%;
 		}
 	}
@@ -29,7 +29,6 @@
 			height: 320px;
 		}
 	}
-
 	&__subitem--flex {
 		display: flex;
 		flex-direction: row;
@@ -51,7 +50,7 @@
 			background-position: -520px 0px;
 			height: 640px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			background: url(../img/many-iphones-2.png) no-repeat, $bg-grey;
 			background-position: -520px 0px;
 			height: 640px;
@@ -84,7 +83,7 @@
 			padding-left: 66px;
 			font-size: 68px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			width: 250px;
 			padding-top: 315px;
 			padding-left: 66px;
@@ -93,7 +92,6 @@
 	}
 	&__description {
 		position: relative;
-		// width: 250px;
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;
@@ -108,7 +106,7 @@
 			padding-left: 65px;
 			width: 320px;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			margin: 0;
 			padding-top: 22px;
 			padding-left: 65px;
@@ -116,17 +114,7 @@
 		}
 	}
 	&__description--desktop:before {
-		content: '+';
-		display: block;
-		position: absolute;
-		bottom: 50px;
-		padding: 2px 7px;
-		width: 42px;
-		height: 42px;
-		border: 1px solid $text-color;
-		border-radius: 50%;
-		font-size: 30px;
-		color: $text-color;
+		@include plus;
 		@include responsive(handhelds) {
 			display: none;
 		}
@@ -144,7 +132,7 @@
 		@include responsive(hight-screens) {
 			display: none;
 		}
-		@include responsive(max-hight-screens) {
+		@include responsive(super-hight-screens) {
 			display: none;
 		}
 		background-position: -331px;
