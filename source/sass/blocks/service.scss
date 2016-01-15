@@ -7,9 +7,15 @@
 	@include responsive(handhelds) {
 		flex-direction: column;
 	}
+	@include responsive(medium-screens) {
+		flex-direction: column;
+	}
 	&__item {
 		width: 33.3333%;
 		@include responsive(handhelds) {
+			width: 100%;
+		}
+		@include responsive(medium-screens) {
 			width: 100%;
 		}
 		@include responsive(hight-screens) {
@@ -35,6 +41,9 @@
 		@include responsive(handhelds) {
 			height: 145px;
 		}
+		@include responsive(medium-screens) {
+			height: 145px;
+		}
 	}
 	&__subitem--img {
 		background: url(../img/more-people-high-screen.png) no-repeat, $smoke;
@@ -42,6 +51,12 @@
 		background-size: contain;
 		height: 240px;
 		@include responsive(handhelds) {
+			height: 150px;
+			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
+			background-position: 0px 12px;
+			background-size: cover;
+		}
+		@include responsive(medium-screens) {
 			height: 150px;
 			background: url(../img/more-people-high-screen-2.png) no-repeat, $smoke;
 			background-position: 0px 12px;
@@ -67,6 +82,9 @@
 		@include responsive(handhelds) {
 			height: 65px;
 		}
+		@include responsive(medium-screens) {
+			height: 65px;
+		}
 	}
 	&__subitem--flex {
 		display: flex;
@@ -84,9 +102,12 @@
 		@include responsive(handhelds) {
 			background-position: 0px 0px;
 		}
+		@include responsive(medium-screens) {
+			background-position: 0px 0px;
+			background-size: cover;
+		}
 		@include responsive(hight-screens) {
 			background-position: -33px -4px;
-			;
 		}
 		@include responsive(max-hight-screens) {
 			background-size: cover;
@@ -98,6 +119,9 @@
 		height: 515px;
 		background-position: -32px 49px;
 		@include responsive(handhelds) {
+			display: none;
+		}
+		@include responsive(medium-screens) {
 			display: none;
 		}
 	}

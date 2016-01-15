@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-	min-height: 640px;
+	min-height: 100px;
 	@include responsive(handhelds) {
 		flex-direction: column;
 	}
@@ -11,6 +11,9 @@
 		width: 33.3333%;
 		@include responsive(handhelds) {
 			width: 100%;
+		}
+		@include responsive(medium-screens) {
+			width: 50%;
 		}
 		@include responsive(tablet) {
 			width: 34.5%
@@ -32,6 +35,11 @@
 			background-size: cover;
 			background-position: 0px -100px;
 		}
+		@include responsive(medium-screens) {
+			height: 320px;
+			background-size: cover;
+			background-position: 0px 0px;
+		}
 		@include responsive(hight-screens) {
 			width: 60%;
 			background-position: -28px -381px;
@@ -44,6 +52,9 @@
 	&__subitem {
 		min-height: 640px;
 		@include responsive(handhelds) {
+			min-height: 100px;
+		}
+		@include responsive(medium-screens) {
 			min-height: 100px;
 		}
 	}
@@ -59,6 +70,10 @@
 			height: 320px;
 			background-size: cover;
 		}
+		@include responsive(medium-screens) {
+			height: 320px;
+			background-size: cover;
+		}
 	}
 	&__img--center {
 		background: url(../img/stuff-center.png) no-repeat;
@@ -67,19 +82,25 @@
 		@include responsive(handhelds) {
 			display: none;
 		}
+		@include responsive(medium-screens) {
+			display: none;
+		}
 	}
 	&__title {
 		@include content-title;
 		color: $text-color;
 		padding: 21px 29px 4px 29px;
 		line-height: 60px;
-		@include responsive(tablet) {
-			// padding: 21px 4px 15px;
-		}
+	@include responsive(medium-screens) {
+		font-size: 42px;
+	}
 	}
 	&__title--size {
 		font-size: 58px;
+	@include responsive(medium-screens) {
+		font-size: 42px;
 	}
+}
 	&__title--fonts {
 		color: $white;
 		line-height: 65px;
@@ -87,6 +108,12 @@
 		padding-left: 34px;
 		@include responsive(handhelds) {
 			padding-top: 100px;
+			color: $text-color;
+		}
+		@include responsive(medium-screens) {
+			padding-top: 21px;
+			padding-left: 34px;
+			line-height: 60px;
 			color: $text-color;
 		}
 		@include responsive(tablet) {
@@ -104,10 +131,14 @@
 		}
 	}
 	&__description {
-		width: 250px;
+		// width: 250px;
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;
+		@include responsive(medium-screens) {
+			padding-bottom: 0;
+			word-break: break-word;
+		}
 		@include responsive(tablet) {
 			margin: 0 10px;
 		}
@@ -117,6 +148,11 @@
 		padding-top: 13px;
 		padding-left: 10px;
 		@include responsive(handhelds) {
+			padding-left: 0px;
+			color: $black;
+		}
+		@include responsive(medium-screens) {
+			padding-top: 0;
 			padding-left: 0px;
 			color: $black;
 		}
@@ -140,6 +176,9 @@
 		font-size: 30px;
 		color: $white;
 		@include responsive(handhelds) {
+
+		}
+		@include responsive(medium-screens) {
 			display: none;
 		}
 		// 	@include responsive(hight-screens) {

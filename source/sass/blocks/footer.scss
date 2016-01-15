@@ -6,6 +6,9 @@
 	@include responsive(handhelds) {
 		flex-direction: column;
 	}
+	@include responsive(medium-screens) {
+		flex-direction: column;
+	}
 	@include responsive(hight-screens) {
 		justify-content: center;
 	}
@@ -16,6 +19,9 @@
 
 .contacts {
 	@include responsive(handhelds) {
+		margin: 0 auto;
+	}
+	@include responsive(medium-screens) {
 		margin: 0 auto;
 	}
 }
@@ -31,15 +37,24 @@
 		padding: 0;
 		width: 100%;
 	}
+	@include responsive(medium-screens) {
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
 	&__city {
 		font-family: Arial;
 		font-weight: bold;
 		color: #424141;
 		padding-bottom: 20px;
-		@include responsive(handhelds) {}
 	}
 	&__item {
 		@include responsive(handhelds) {
+			width: 100%;
+			padding: 0px 78px;
+			text-align: center;
+		}
+		@include responsive(medium-screens) {
 			width: 100%;
 			padding: 0px 78px;
 			text-align: center;
@@ -49,6 +64,9 @@
 		font-family: Arial;
 		color: #424141;
 		@include responsive(handhelds) {
+			padding-bottom: 20px;
+		}
+		@include responsive(medium-screens) {
 			padding-bottom: 20px;
 		}
 	}
@@ -61,6 +79,9 @@
 	padding: 55px 0 5px 35px;
 	color: #424141;
 	@include responsive(handhelds) {
+		padding: 40px 0 5px 35px;
+	}
+	@include responsive(medium-screens) {
 		padding: 40px 0 5px 35px;
 	}
 	@include responsive(hight-screens) {
@@ -81,6 +102,9 @@
 	padding-left: 35px;
 	color: #424141;
 	@include responsive(handhelds) {
+		padding: 0 0 30px 0;
+	}
+	@include responsive(medium-screens) {
 		padding: 0 0 30px 0;
 	}
 }
