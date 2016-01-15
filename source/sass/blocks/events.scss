@@ -53,6 +53,7 @@
 	}
 	&__item--center:before {
 		@include plus;
+		@include plus-position;
 	}
 	&__item--right {
 		display: none;

@@ -132,6 +132,7 @@
 	}
 	&__description--white:before {
 		@include plus;
+		@include plus-position-content;
 		border: 1px solid $white;
 		color: $white;
 		@include responsive(handhelds) {

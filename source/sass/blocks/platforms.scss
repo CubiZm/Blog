@@ -115,6 +115,7 @@
 	}
 	&__description--desktop:before {
 		@include plus;
+		@include plus-position-content;
 		@include responsive(handhelds) {
 			display: none;
 		}

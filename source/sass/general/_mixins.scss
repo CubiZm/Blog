@@ -60,14 +60,21 @@
 	content: '+';
 	display: block;
 	position: absolute;
-	right: 26px;
-	top: 17px;
 	padding: 2px 7px;
 	width: 42px;
 	height: 42px;
 	border: 1px solid #483435;
 	border-radius: 50%;
 	font-size: 30px;
+}
+
+@mixin plus-position {
+	right: 26px;
+	top: 17px;
+}
+
+@mixin plus-position-content {
+	bottom: 50px;
 }
 
 @mixin responsive($media) {
