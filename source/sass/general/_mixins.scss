@@ -43,6 +43,7 @@
 	right: 35px;
 	height: 30px;
 	width: 30px;
+	cursor: pointer;
 }
 
 @mixin menu-close {
@@ -52,6 +53,7 @@
 	position: absolute;
 	top: 24px;
 	right: 15px;
+	cursor: pointer;
 }
 
 @mixin plus {
