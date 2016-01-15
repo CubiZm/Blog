@@ -18,7 +18,7 @@
 		@include responsive(hight-screens) {
 			width: 25%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 25%;
 		}
 	}
@@ -36,7 +36,7 @@
 			width: 60%;
 			background-position: -28px -381px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 60%;
 			background-position: -28px -381px;
 		}
@@ -97,7 +97,7 @@
 			font-size: 73px;
 			color: $text-color;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 300px;
 			font-size: 73px;
 			color: $text-color;
@@ -123,7 +123,7 @@
 		@include responsive(hight-screens) {
 			color: $text-color;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			color: $text-color;
 		}
 	}
@@ -145,7 +145,7 @@
 		// 	@include responsive(hight-screens) {
 		// 		border: 1px solid $text-color;
 		// 	}
-		// 	@media($desktop-high) {
+		// 	@include responsive(max-hight-screens) {
 		// 		border: 1px solid $text-color;
 		// 	}
 		// }

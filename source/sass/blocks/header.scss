@@ -9,7 +9,7 @@
 		justify-content: space-between;
 		background: $smoke;
 	}
-	@media($desktop-high) {
+	@include responsive(max-hight-screens) {
 		justify-content: space-between;
 		background: $smoke;
 		max-width: 1440px;
@@ -21,7 +21,7 @@
 			display: flex;
 			justify-content: flex-end;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: flex;
 			justify-content: flex-end;
 		}
@@ -42,20 +42,13 @@
 	.menu {
 		width: 550px;
 		@include responsive(handhelds) {
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			text-align: center;
-			display: none;
+			@include menu-mobile;
+		}
+		@include responsive(medium-screens) {
+			@include menu-mobile;
 		}
 		@include responsive(tablet) {
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			text-align: center;
-			display: none;
+			@include menu-mobile;
 		}
 	&__list {
 		display: flex;
@@ -63,14 +56,13 @@
 		padding: 20px 40px 0 0;
 		list-style-type: none;
 		@include responsive(handhelds) {
-			flex-direction: column;
-			background: white;
-			padding: 0;
+			@include mobile-list;
+		}
+		@include responsive(medium-screens) {
+			@include mobile-list;
 		}
 		@include responsive(tablet) {
-			flex-direction: column;
-			background: white;
-			padding: 0;
+			@include mobile-list;
 		}
 	}
 	&__item {
@@ -78,34 +70,29 @@
 		font-size: 13px;
 		text-transform: uppercase;
 		@include responsive(handhelds) {
-			padding: 15px;
-			font-size: 17px;
+			@include mobile-item;
+		}
+		@include responsive(medium-screens) {
+			@include mobile-item;
 		}
 		@include responsive(tablet) {
-			padding: 15px;
-			font-size: 17px;
+			@include mobile-item;
 		}
 	}
 	&__link {
 		text-decoration: none;
 		color: $black;
 	}
-	&--burger {
+	&-burger {
 		@include responsive(handhelds) {
-			background: url(../img/menu-burger.svg) no-repeat;
-			position: absolute;
-			top: 24px;
-			right: 10px;
-			height: 30px;
-			width: 30px;
+			@include mobile-burger;
+			right: 15px;
+		}
+		@include responsive(medium-screens) {
+			@include mobile-burger;
 		}
 		@include responsive(tablet) {
-			background: url(../img/menu-burger.svg) no-repeat;
-			position: absolute;
-			top: 24px;
-			right: 35px;
-			height: 30px;
-			width: 30px;
+			@include mobile-burger;
 		}
 	}
 }

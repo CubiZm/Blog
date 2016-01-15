@@ -15,7 +15,7 @@
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 22%;
 		}
 	}
@@ -25,7 +25,7 @@
 			width: 56%;
 			background: $smoke;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 56%;
 			background: $smoke;
 		}
@@ -53,7 +53,7 @@
 			margin: 0 auto;
 			height: 345px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			background-position: 22px 0px;
 			background-size: cover;
 		}
@@ -88,7 +88,7 @@
 			background-position: -33px -4px;
 			;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			background-size: cover;
 			background-position: 0;
 		}
@@ -116,7 +116,7 @@
 		@include responsive(hight-screens) {
 			padding: 32px 12px 0 0px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			padding: 32px 12px 0 0px;
 		}
 	}
@@ -131,7 +131,7 @@
 			display: inline-block;
 			padding-right: 6px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: inline-block;
 			padding-right: 6px;
 		}
@@ -154,7 +154,7 @@
 			padding: 25px 0 0 0px;
 			width: 545px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			padding: 25px 0 0 0px;
 			width: 545px;
 		}

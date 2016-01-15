@@ -18,7 +18,7 @@
 			width: 320px;
 			min-height: 5px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			width: 320px;
 			min-height: 5px;
@@ -30,7 +30,7 @@
 			display: block;
 			width: 33%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			width: 33%;
 		}
@@ -46,7 +46,7 @@
 			display: block;
 			width: 47.5%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			width: 47.5%;
 		}
@@ -70,7 +70,7 @@
 		@include responsive(hight-screens) {
 			width: 22.5%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 22.5%;
 		}
 	}

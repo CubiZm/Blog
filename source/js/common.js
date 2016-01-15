@@ -1,6 +1,6 @@
 //menu
 var parent = document.querySelector(".menu");
-var toggle = document.querySelector(".menu--burger");
+var toggle = document.querySelector(".menu-burger");
 
 parent.classList.add('js-menu');
 

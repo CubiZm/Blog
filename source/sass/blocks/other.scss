@@ -8,7 +8,7 @@
 		display: block;
 		color: lighten(#4d3a3b, 0.3)
 	}
-	@media($desktop-high) {
+	@include responsive(max-hight-screens) {
 		display: block;
 		color: #999999;
 	}

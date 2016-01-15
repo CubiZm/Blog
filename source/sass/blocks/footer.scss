@@ -9,7 +9,7 @@
 	@include responsive(hight-screens) {
 		justify-content: center;
 	}
-	@media($desktop-high) {
+	@include responsive(max-hight-screens) {
 		justify-content: center;
 	}
 }
@@ -68,7 +68,7 @@
 		background-position: -2px 55px;
 		background-size: 16px;
 	}
-	@media($desktop-high) {
+	@include responsive(max-hight-screens) {
 		background: url(../img/map.png) no-repeat;
 		background-position: -2px 55px;
 		background-size: 16px;

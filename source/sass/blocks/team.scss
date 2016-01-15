@@ -17,7 +17,7 @@
 			background: $white;
 			width: 30%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			background: $white;
 			width: 30%;
@@ -36,7 +36,7 @@
 			width: 37%;
 			padding: 0 0 0 35px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			width: 37%;
 			padding: 0 0 0 35px;
@@ -49,7 +49,7 @@
 			background: $white;
 			width: 15%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			background: $white;
 			width: 15%;
@@ -66,7 +66,7 @@
 			display: block;
 			width: 53%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			display: block;
 			width: 53%;
 		}

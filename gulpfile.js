@@ -65,7 +65,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("fonts", function() {
-	return gulp.src("./source/fonts/*.otf")
+	return gulp.src("./source/fonts/*.{otf,eot,svg,ttf,woff,woff2}")
 		.pipe(gulp.dest("build/fonts/"));
 });
 

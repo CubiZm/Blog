@@ -16,13 +16,42 @@
 		color: $text-color;
 }
 
+@mixin menu-mobile {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+}
+
+@mixin mobile-list {
+	flex-direction: column;
+	background: white;
+	padding: 0;
+}
+
+@mixin mobile-item {
+	padding: 15px;
+	font-size: 17px;
+}
+
+@mixin mobile-burger {
+	background: url(../img/menu-burger.svg) no-repeat;
+	position: absolute;
+	top: 24px;
+	right: 35px;
+	height: 30px;
+	width: 30px;
+}
+
 
 @mixin responsive($media) {
 	@if $media == handhelds {
 		@media only screen and (max-width: $mobile) { @content; }
 	}
 	@else if $media == medium-screens {
-		@media only screen and (min-width: $mobile + 1) and (max-width: $tablet - 1) { @content; }
+		@media only screen and (min-width: $mobile + 1) and (max-width: $mobile-hight - 1) { @content; }
 	}
 	@else if $media == tablet {
 		@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) { @content; }
@@ -31,7 +60,10 @@
 	@else if $media == wide-screens {
 		@media only screen and (min-width: $tablet) { @content; }
 	}
-		@else if $media == hight-screens {
+	@else if $media == hight-screens {
 		@media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) { @content; }
+	}
+	@else if $media == super-hight-screens {
+		@media only screen and (min-width: $desktop) { @content; }
 	}
 }

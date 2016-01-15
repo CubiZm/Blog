@@ -15,7 +15,7 @@
 		@include responsive(hight-screens) {
 			width: 22%;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			width: 22%;
 		}
 	}
@@ -32,7 +32,7 @@
 			width: 57%;
 			background-position: 0px 0px;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			justify-content: flex-end;
 			justify-content: flex-end;
 			width: 57%;
@@ -57,7 +57,7 @@
 		@include responsive(handhelds) {
 			display: none;
 		}
-		@media($desktop-high) {
+		@include responsive(max-hight-screens) {
 			background-position: -300px -90px;
 		}
 	}
