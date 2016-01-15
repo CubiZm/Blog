@@ -24,6 +24,12 @@
 			width: 82%;
 		}
 	}
+	&__subitem {
+		@include responsive(medium-screens) {
+			height: 320px;
+		}
+	}
+
 	&__subitem--flex {
 		display: flex;
 		flex-direction: row;
@@ -38,6 +44,7 @@
 		@include responsive(medium-screens) {
 			display: flex;
 			flex-direction: column;
+			height: 640px;
 		}
 		@include responsive(hight-screens) {
 			background: url(../img/many-iphones-2.png) no-repeat, $bg-grey;
@@ -56,9 +63,6 @@
 		@include responsive(handhelds) {
 			display: none;
 		}
-		@include responsive(medium-screens) {
-			display: none;
-		}
 	}
 	&__img--center {
 		background: url(../img/app-iphone.png) no-repeat;
@@ -69,6 +73,9 @@
 		@include content-title;
 		padding: 21px 29px 4px 29px;
 		line-height: 60px;
+		@include responsive(medium-screens) {
+			font-size: 42px;
+		}
 	}
 	&__title--desktop {
 		@include responsive(hight-screens) {
@@ -86,7 +93,7 @@
 	}
 	&__description {
 		position: relative;
-		width: 250px;
+		// width: 250px;
 		margin: 0 30px;
 		padding-bottom: 118px;
 		font-size: 16px;

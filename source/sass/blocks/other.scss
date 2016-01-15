@@ -19,6 +19,9 @@
 	@include responsive(handhelds) {
 		display: none;
 	}
+	@include responsive(medium-screens) {
+		display: none;
+	}
 	@include responsive(tablet) {
 		display: none;
 	}
@@ -28,6 +31,9 @@
 	@include responsive(handhelds) {
 		display: block;
 	}
+	@include responsive(medium-screens) {
+		display: block;
+	}
 	@include responsive(tablet) {
 		display: block;
 	}
@@ -35,6 +41,14 @@
 
 .header__js-menu--close {
 	@include responsive(handhelds) {
+		background: url(../img/no.svg) no-repeat;
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 24px;
+		right: 15px;
+	}
+	@include responsive(medium-screens) {
 		background: url(../img/no.svg) no-repeat;
 		width: 26px;
 		height: 26px;
