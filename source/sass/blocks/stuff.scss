@@ -176,4 +176,8 @@
 		// 	}
 		// }
 	}
+	&__title:hover {
+		color: $black;
+		transition: color 0.4s;
+	}
 }
