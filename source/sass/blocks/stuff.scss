@@ -143,6 +143,7 @@
 		color: $white;
 		padding-top: 13px;
 		padding-left: 10px;
+		// width: 216px;
 		@include responsive(handhelds) {
 			padding-left: 0px;
 			color: $black;

@@ -84,9 +84,7 @@
 		color: $black;
 	}
 	&__link:hover {
-		border-top: 2px solid $black;
 		border-bottom: 2px solid $black;
-		transition: border-top 0.4s, border-bottom 0.4s;
 	}
 	&-burger {
 		@include responsive(handhelds) {
